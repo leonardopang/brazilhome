@@ -429,7 +429,6 @@ function initCEPCalculator() {
 // Make calculateShipping globally accessible
 window.calculateShipping = async function () {
   if (window.__shippingRunning) return;
-  window.__shippingRunning = true;
   const cepInput = document.querySelector(".cep-input");
   const cepButton = document.querySelector(".cep-button");
 
@@ -448,6 +447,11 @@ window.calculateShipping = async function () {
     showShippingError("CEP deve ter 8 dígitos");
     return;
   }
+
+  // Only mark the run as in-progress once we're actually about to run it —
+  // an early return above (invalid CEP) must never leave this stuck at
+  // true, or every future click/Enter is silently ignored.
+  window.__shippingRunning = true;
 
   // Show loading state
   cepButton.textContent = "CALCULANDO...";
