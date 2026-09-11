@@ -1,0 +1,321 @@
+/*
+ * Shared product card component.
+ *
+ * Used by every place a product card renders (home "featured" grid, shop /
+ * product category archives, "todos os produtos", related/recently-viewed
+ * products on the single product page, "quem somos" carousel) EXCEPT the
+ * cart and checkout pages, which don't use this card at all.
+ *
+ * Two markup class names exist for historical reasons and are both
+ * supported here: `.featured-product-card` (home, quem-somos, related
+ * products) and `.product-card` (shop/category archives, todos os
+ * produtos) — page-specific JS (category.js / homepage.js) still targets
+ * its own class name, only the visual styling is unified.
+ *
+ * Every rule below is scoped under one of those two card selectors: the
+ * single product page's own buy panel reuses the same class names
+ * (.product-info, .product-price, .product-title, ...) for unrelated
+ * markup, so bare/unscoped selectors here would bleed into it.
+ */
+
+.featured-product-card,
+.product-card {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+  border: 1px solid #cfdbe8;
+  width: 100%;
+  min-width: 0;
+  max-width: 290px;
+  cursor: pointer;
+}
+
+.featured-product-card .product-image,
+.product-card .product-image {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 32px;
+}
+
+.featured-product-card .product-image img,
+.product-card .product-image img {
+  width: 212px;
+  height: 179px;
+  object-fit: scale-down;
+}
+
+.featured-product-card .product-info,
+.product-card .product-info {
+  padding: 12px 16px;
+}
+
+.featured-product-card .product-title,
+.product-card .product-title {
+  font-family: Manrope;
+  font-weight: 800;
+  font-style: ExtraBold;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 140%;
+  letter-spacing: 2%;
+  text-transform: uppercase;
+  color: #1c4067;
+}
+
+.featured-product-card .product-link,
+.product-card .product-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.featured-product-card .product-link:hover,
+.product-card .product-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.featured-product-card .product-link .product-title:hover,
+.product-card .product-link .product-title:hover {
+  color: #0264c0;
+  transition: color 0.3s ease;
+}
+
+.featured-product-card .product-price,
+.product-card .product-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.featured-product-card .product-price-current,
+.product-card .product-price-current {
+  background-color: #f8f2e6;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-family: Manrope;
+  font-weight: 800;
+  font-style: ExtraBold;
+  font-size: 22px;
+  leading-trim: NONE;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #1c4067;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.featured-product-card .product-price-installments,
+.product-card .product-price-installments {
+  font-family: Manrope;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  width: 100%;
+}
+
+.featured-product-card .product-price-installments .product-price-installments-text,
+.product-card .product-price-installments .product-price-installments-text {
+  font-family: Manrope;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 14px;
+  leading-trim: NONE;
+  line-height: 140%;
+  letter-spacing: 0%;
+  color: #707d8c;
+  display: flex;
+  justify-content: center;
+}
+
+.featured-product-card .product-price-installments mark,
+.product-card .product-price-installments mark {
+  font-family: Manrope;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 14px;
+  leading-trim: NONE;
+  line-height: 140%;
+  letter-spacing: 0%;
+  background-color: transparent;
+  color: #1c4067;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.featured-product-card .product-info .product-btn-buy,
+.product-card .product-info .product-btn-buy {
+  font-family: Manrope;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 14px;
+  leading-trim: NONE;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #0264c0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px 10px;
+  border-radius: 4px;
+  margin-top: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  outline: none;
+  min-height: 44px;
+  touch-action: manipulation;
+  text-decoration: none;
+}
+
+.featured-product-card .product-info .product-btn-buy:hover,
+.product-card .product-info .product-btn-buy:hover {
+  background-color: #1c4067;
+  color: #f8f2e6;
+}
+
+/* Disabled/Unavailable button state */
+.featured-product-card .product-info .product-btn-unavailable,
+.product-card .product-info .product-btn-unavailable {
+  background-color: #cbd5e1;
+  color: #64748b;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.featured-product-card .product-info .product-btn-unavailable:hover,
+.product-card .product-info .product-btn-unavailable:hover {
+  background-color: #cbd5e1;
+  color: #64748b;
+  transform: none;
+}
+
+.featured-product-card .product-features,
+.product-card .product-features {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  margin-top: 24px;
+  width: 100%;
+}
+
+.featured-product-card .product-feature-item,
+.product-card .product-feature-item {
+  font-family: Manrope;
+  font-weight: 800;
+  font-style: ExtraBold;
+  font-size: 10px;
+  leading-trim: NONE;
+  line-height: 120%;
+  letter-spacing: 2%;
+  text-transform: uppercase;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border: 1px solid #eceff3;
+  padding: 4px;
+  border-radius: 4px;
+  cursor: default;
+}
+
+.featured-product-card .product-feature-item .feature-icon,
+.product-card .product-feature-item .feature-icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .featured-product-card,
+  .product-card {
+    width: 100%;
+    max-width: none;
+  }
+
+  .featured-product-card .product-title,
+  .product-card .product-title {
+    font-size: 14px;
+  }
+
+  .featured-product-card .product-price-current,
+  .product-card .product-price-current {
+    font-size: 18px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .featured-product-card,
+  .product-card {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .featured-product-card .product-image,
+  .product-card .product-image {
+    padding: 20px;
+  }
+
+  .featured-product-card .product-image img,
+  .product-card .product-image img {
+    width: 100%;
+    height: 150px;
+  }
+
+  .featured-product-card .product-info,
+  .product-card .product-info {
+    padding: 15px;
+  }
+
+  .featured-product-card .product-features,
+  .product-card .product-features {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .featured-product-card .product-feature-item,
+  .product-card .product-feature-item {
+    justify-content: center;
+    padding: 8px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .featured-product-card,
+  .product-card {
+    max-width: 280px;
+  }
+
+  .featured-product-card .product-title,
+  .product-card .product-title {
+    font-size: 13px;
+  }
+
+  .featured-product-card .product-price-current,
+  .product-card .product-price-current {
+    font-size: 16px;
+  }
+}

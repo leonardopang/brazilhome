@@ -1,0 +1,673 @@
+/* Post Page Styles */
+
+.post-main {
+    background-color: #ffffff;
+}
+
+/* Hero Section */
+.post-hero {
+    position: relative;
+    height: 470px;
+    min-height: 470px;
+    overflow: hidden;
+}
+
+.post-hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.post-hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%);
+    display: flex;
+    padding-bottom: 60px;
+    padding-top: 59px;
+}
+
+.post-hero-content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1216px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.post-hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.left-content-container {
+    max-width: 600px;
+    width: 600px;
+}
+
+.post-hero-content {
+    color: white;
+}
+
+/* Back Button */
+.post-back-button {
+    margin-bottom: 20px;
+}
+
+.back-link {
+   font-family: Manrope;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 140%;
+    letter-spacing: 2%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.post-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.post-separator {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.post-category-link {
+    font-family: Manrope;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 140%;
+    letter-spacing: 2%;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Post Title */
+.post-hero-content .post-title {
+    font-family: Manrope;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 48px;
+    leading-trim: NONE;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+
+/* Social Share */
+.post-social-share {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    align-self: flex-end;
+    background-color: #fff;
+    padding:16px;
+    border-radius: 8px;
+}
+
+.share-text {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    leading-trim: CAP_HEIGHT;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: #707D8C;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-btn a picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.social-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+.social-btn.linkedin {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.social-btn.more {
+    font-size: 16px;
+    color: white;
+}
+
+/* Article Content */
+.post-article {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.post-container {
+    max-width: 1216px;
+    margin: 0 auto;
+}
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* WordPress Content Styling */
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+    font-family: Manrope;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    leading-trim: NONE;
+    line-height: 120%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #1C4067;
+    padding-top: 32px;
+}
+
+.post-content h1 {
+    font-size: 32px;
+}
+
+.post-content h2 {
+    font-size: 28px;
+}
+
+.post-content h3 {
+    font-size: 24px;
+}
+
+.post-content h4 {
+    font-size: 20px;
+}
+
+.post-content h5 {
+    font-size: 18px;
+}
+
+.post-content h6 {
+    font-size: 16px;
+}
+
+.post-content p {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 160%;
+    letter-spacing: 0%;
+    color: #707D8C;
+    padding-top: 16px;
+}
+
+.post-content p:last-child {
+    margin-bottom: 0;
+}
+
+.post-content ul,
+.post-content ol {
+    font-family: Manrope, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #64748b;
+    padding-left: 20px;
+}
+
+.post-content li {
+    margin-bottom: 8px;
+}
+
+.post-content blockquote {
+    font-family: Manrope, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1.6;
+    color: #1C4067;
+    margin: 30px 0;
+    padding: 20px 30px;
+    border-left: 4px solid #1C4067;
+    background-color: #f8fafc;
+}
+
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 30px 0;
+    border-radius: 8px;
+}
+
+.post-content a {
+    color: #1C4067;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.post-content a:hover {
+    color: #1C4067;
+}
+
+.post-content strong,
+.post-content b {
+    font-weight: 700;
+    color: #1C4067;
+}
+
+.post-content em,
+.post-content i {
+    font-style: italic;
+}
+
+.post-content code {
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    background-color: #f1f5f9;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #e11d48;
+}
+
+.post-content pre {
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    background-color: #f1f5f9;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 20px 0;
+    border: 1px solid #e2e8f0;
+}
+
+.post-content pre code {
+    background-color: transparent;
+    padding: 0;
+    color: #334155;
+}
+
+.post-content hr {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    margin: 40px 0;
+}
+
+.post-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    font-family: Manrope, sans-serif;
+    font-size: 14px;
+}
+
+.post-content table th,
+.post-content table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.post-content table th {
+    font-weight: 700;
+    color: #1C4067;
+    background-color: #f8fafc;
+}
+
+.post-content table td {
+    color: #64748b;
+}
+
+/* Related Posts Section */
+.related-posts-section {
+    padding: 80px 0;
+}
+
+.related-posts-title {
+    font-family: Manrope;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 36px;
+    leading-trim: NONE;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    border-top: 1px solid #CFDBE8;
+    padding-top: 80px;
+    color:#1C4067;
+}
+
+.related-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 48px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .post-hero-container {
+        padding: 0 40px;
+    }
+    
+    .post-container {
+        padding: 0 40px;
+    }
+    
+    .related-posts-grid {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .post-title {
+        font-size: 40px;
+    }
+    
+    .related-posts-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .post-hero {
+        height: 350px;
+        min-height: 350px;
+    }
+    
+    .post-hero-overlay {
+        padding-bottom: 20px;
+        padding-top: 30px;
+    }
+    
+    .post-hero-container {
+        padding: 0 20px;
+    }
+    
+    .post-hero-content-container {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 50px;
+    }
+    
+    .left-content-container {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .post-title {
+        font-size: 32px;
+        margin: 0 0 20px 0;
+    }
+    
+    .post-meta {
+        font-size: 12px;
+        gap: 8px;
+        margin-bottom: 15px;
+    }
+    
+    .post-social-share {
+        align-self: center;
+        padding: 12px;
+    }
+    
+    .share-text {
+        font-size: 14px;
+    }
+    
+    .post-article {
+        padding: 60px 0;
+    }
+    
+    .post-content {
+        gap: 40px;
+    }
+    
+    /* WordPress Content Responsive */
+    .post-content h1 {
+        font-size: 28px;
+    }
+    
+    .post-content h2 {
+        font-size: 24px;
+    }
+    
+    .post-content h3 {
+        font-size: 20px;
+    }
+    
+    .post-content h4 {
+        font-size: 18px;
+    }
+    
+    .post-content h5 {
+        font-size: 16px;
+    }
+    
+    .post-content h6 {
+        font-size: 14px;
+    }
+    
+    .post-content p,
+    .post-content ul,
+    .post-content ol {
+        font-size: 15px;
+    }
+    
+    .post-content blockquote {
+        font-size: 16px;
+        padding: 15px 20px;
+    }
+    
+    .post-content pre {
+        padding: 15px;
+    }
+    
+    .related-posts-section {
+        padding: 60px 0;
+    }
+    
+    .related-posts-title {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+    
+    .related-posts-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .post-hero {
+        height: 45vh;
+        min-height: 300px;
+    }
+    
+    .post-hero-overlay {
+        padding-bottom: 15px;
+        padding-top: 20px;
+    }
+    
+    .post-hero-container {
+        padding: 0 15px;
+    }
+    
+    .post-hero-content-container {
+        margin-top: 30px;
+        gap: 20px;
+    }
+    
+    .post-title {
+        font-size: 24px;
+        line-height: 1.1;
+    }
+    
+    .post-meta {
+        font-size: 11px;
+        gap: 6px;
+        margin-bottom: 10px;
+    }
+    
+   
+    
+    .back-link {
+        font-size: 12px;
+    }
+    
+    .post-social-share {
+        padding: 10px;
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+    
+    .share-text {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    
+    .post-article {
+        padding: 40px 0;
+    }
+    
+    .post-container {
+        padding: 0 15px;
+    }
+    
+    .post-content {
+        gap: 30px;
+    }
+    
+    /* WordPress Content Mobile Responsive */
+    .post-content h1 {
+        font-size: 24px;
+    }
+    
+    .post-content h2 {
+        font-size: 20px;
+    }
+    
+    .post-content h3 {
+        font-size: 18px;
+    }
+    
+    .post-content h4 {
+        font-size: 16px;
+    }
+    
+    .post-content h5 {
+        font-size: 15px;
+    }
+    
+    .post-content h6 {
+        font-size: 14px;
+    }
+    
+    .post-content p,
+    .post-content ul,
+    .post-content ol {
+        font-size: 14px;
+    }
+    
+    .post-content blockquote {
+        font-size: 15px;
+        padding: 12px 16px;
+        margin: 20px 0;
+    }
+    
+    .post-content pre {
+        padding: 12px;
+        font-size: 12px;
+    }
+    
+    .post-content table {
+        font-size: 12px;
+    }
+    
+    .post-content table th,
+    .post-content table td {
+        padding: 8px;
+    }
+    
+    .related-posts-section {
+        padding: 40px 0;
+    }
+    
+    .related-posts-title {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    
+    .social-buttons {
+        gap: 8px;
+    }
+    
+    .social-btn {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .social-btn img {
+        width: 16px;
+        height: 16px;
+    }
+}

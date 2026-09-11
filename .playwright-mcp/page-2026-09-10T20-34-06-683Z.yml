@@ -1,0 +1,265 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e5]:
+      - link "Quem somos" [ref=e6] [cursor=pointer]:
+        - /url: https://brazilhome.com.br/quem-somos
+      - generic [ref=e8]:
+        - generic [ref=e9]:
+          - img "FRETE GRÁTIS PARA TODO O BRASIL" [ref=e10]
+          - text: FRETE GRÁTIS PARA TODO O BRASIL
+        - generic [ref=e11]:
+          - img "ENVIO NO MESMO DIA SÃO PAULO" [ref=e12]
+          - text: ENVIO NO MESMO DIA SÃO PAULO
+        - generic [ref=e13]:
+          - img "DESCONTO DE 5% NO PIX" [ref=e14]
+          - text: DESCONTO DE 5% NO PIX
+      - link "Fale conosco" [ref=e15] [cursor=pointer]:
+        - /url: https://brazilhome.com.br/fale-conosco
+    - generic [ref=e18]:
+      - link [ref=e20] [cursor=pointer]:
+        - /url: https://brazilhome.com.br
+        - img "Brazil Home Living" [ref=e21]
+      - generic [ref=e23]:
+        - textbox "QUE ESTÁ PROCURANDO?" [ref=e24]
+        - button [ref=e25] [cursor=pointer]:
+          - img "Buscar" [ref=e26]
+      - generic [ref=e27]:
+        - link "Entrar Usuário" [ref=e29] [cursor=pointer]:
+          - /url: https://brazilhome.com.br/minha-conta/
+          - generic [ref=e30]: Entrar
+          - img "Usuário" [ref=e31]
+        - link [ref=e33] [cursor=pointer]:
+          - /url: https://brazilhome.com.br/carrinho/
+          - img "Carrinho" [ref=e34]
+    - navigation [ref=e35]:
+      - list [ref=e37]:
+        - listitem [ref=e38]:
+          - link "Todos os produtos" [ref=e39] [cursor=pointer]:
+            - /url: https://brazilhome.com.br/todos-os-produtos/
+        - listitem [ref=e40]:
+          - link "CARRINHOS DE CARGA" [ref=e41] [cursor=pointer]:
+            - /url: https://brazilhome.com.br/categoria-produto/carrinhos-de-carga/
+        - listitem [ref=e42]:
+          - link "DEPÓSITOS DE AÇO" [ref=e43] [cursor=pointer]:
+            - /url: https://brazilhome.com.br/categoria-produto/depositos-de-aco/
+        - listitem [ref=e44]:
+          - link "GAZEBO E PERGOLADO" [ref=e45] [cursor=pointer]:
+            - /url: https://brazilhome.com.br/categoria-produto/gazebos/
+  - main [ref=e46]:
+    - navigation [ref=e49]:
+      - link "HOME" [ref=e50] [cursor=pointer]:
+        - /url: https://brazilhome.com.br
+      - link "CARRINHOS DE CARGA" [ref=e53] [cursor=pointer]:
+        - /url: https://brazilhome.com.br/categoria-produto/carrinhos-de-carga/
+      - generic [ref=e56]: CARRINHO DE CARGA DOBRáVEL PLATAFORMA ATé 150KG
+    - generic [ref=e59]:
+      - generic [ref=e60]:
+        - generic [ref=e61]:
+          - button [ref=e62] [cursor=pointer]
+          - img "Carrinho de Carga Dobrável Plataforma até 150kg" [ref=e66]
+          - button [ref=e73] [cursor=pointer]
+          - generic [ref=e74]: 1 / 7
+        - generic [ref=e75]:
+          - button [ref=e76] [cursor=pointer]
+          - generic [ref=e79]:
+            - generic [aria-hidden] [ref=e80] [cursor=pointer]
+            - generic [aria-hidden] [ref=e81] [cursor=pointer]
+            - generic [aria-hidden] [ref=e82] [cursor=pointer]
+            - generic [aria-hidden] [ref=e83] [cursor=pointer]
+            - generic [ref=e84] [cursor=pointer]
+            - generic [ref=e85] [cursor=pointer]
+            - generic [ref=e86] [cursor=pointer]
+            - generic [ref=e87] [cursor=pointer]
+            - generic [aria-hidden] [ref=e88] [cursor=pointer]
+            - generic [aria-hidden] [ref=e89] [cursor=pointer]
+            - generic [aria-hidden] [ref=e90] [cursor=pointer]
+            - generic [aria-hidden] [ref=e91] [cursor=pointer]
+            - generic [aria-hidden] [ref=e92] [cursor=pointer]
+            - generic [aria-hidden] [ref=e93] [cursor=pointer]
+            - generic [aria-hidden] [ref=e94] [cursor=pointer]
+            - generic [aria-hidden] [ref=e95] [cursor=pointer]
+            - generic [aria-hidden] [ref=e96] [cursor=pointer]
+            - generic [aria-hidden] [ref=e97] [cursor=pointer]
+          - button [ref=e98] [cursor=pointer]
+      - generic [ref=e99]:
+        - generic [ref=e100]:
+          - generic [ref=e101]:
+            - generic [ref=e102]:
+              - img "Frete grátis" [ref=e103]
+              - text: FRETE GRÁTIS
+            - generic [ref=e104]:
+              - img "Delivery" [ref=e105]
+              - text: EM ESTOQUE
+          - heading "Carrinho de Carga Dobrável Plataforma até 150kg" [level=1] [ref=e106]
+          - paragraph
+          - paragraph [ref=e107]: Com estrutura reforçada em aço, base ampla e rodas resistentes, nosso carrinho suporta até 150 kg. Prático, seguro e fácil de guardar, ideal para transportar volumes pesados com estabilidade.
+          - paragraph
+        - generic [ref=e108]:
+          - generic [ref=e109]: R$499,90
+          - generic [ref=e113]:
+            - text: Em até
+            - mark [ref=e114]:
+              - text: 6x de
+              - generic [ref=e115]: R$83,32
+            - text: sem juros
+          - text: 5% OFF NO PIX
+        - generic [ref=e117]:
+          - generic [ref=e119]:
+            - generic [ref=e120]:
+              - img "Delivery" [ref=e121]
+              - textbox "Calcule o frete Informe seu CEP" [ref=e122]
+            - button "CALCULAR" [ref=e123] [cursor=pointer]
+          - generic [ref=e124]:
+            - generic [ref=e126]:
+              - button [ref=e127] [cursor=pointer]:
+                - img "Minus" [ref=e128]
+              - spinbutton [ref=e129]: "1"
+              - button [ref=e130] [cursor=pointer]:
+                - img "Plus" [ref=e131]
+            - button "COMPRAR" [ref=e134] [cursor=pointer]
+          - link "Fale com um especialista" [ref=e135] [cursor=pointer]:
+            - /url: https://tintim.link/s/ZSzXMUPd
+    - generic [ref=e139]:
+      - generic [ref=e140]:
+        - button "DESCRIÇÃO DO PRODUTO" [ref=e141] [cursor=pointer]
+        - button "Especificações" [ref=e142] [cursor=pointer]
+        - button "Manual" [ref=e143] [cursor=pointer]
+        - button "Video" [ref=e144] [cursor=pointer]
+        - button "Compare" [ref=e145] [cursor=pointer]
+      - generic [ref=e147]:
+        - paragraph [ref=e148]: Praticidade, segurança e resistência em um só produto!
+        - paragraph [ref=e149]: O Carrinho de Carga Plataforma da Brazil Home Living é o aliado perfeito para quem precisa transportar objetos pesados e volumosos com muito mais conforto e estabilidade. Robusto e funcional, suporta até 150 kg, tornando-se indispensável para uso em residências, comércios, estoques e até no dia a dia de mudanças ou reformas.
+        - paragraph [ref=e150]: Pensado para facilitar sua rotina, o carrinho conta com freio de segurança, que evita movimentações indesejadas e garante total controle mesmo em terrenos inclinados. Além disso, seu design dobrável permite que seja guardado em qualquer cantinho após o uso, economizando espaço sem abrir mão da praticidade.
+        - paragraph [ref=e151]: A base ampla garante firmeza ao transportar volumes maiores, enquanto os punhos e alças emborrachadasproporcionam conforto durante o manuseio, reduzindo o contato direto com o aço. Outro diferencial está na sua estrutura reforçada, fabricada em ferro de alta durabilidade, combinada a uma base revestida em borracha e ferro fundido para suportar o peso sem deformar.
+        - paragraph [ref=e152]: Para completar, o carrinho vem equipado com quatro rodas maciças em borracha e polipropileno, de 10 cm de diâmetro, que deslizam com suavidade e oferecem mobilidade total, mesmo em pisos mais irregulares.
+        - paragraph [ref=e153]: Mais do que um carrinho, é uma solução inteligente para tornar o transporte de cargas muito mais ágil, seguro e prático. Se você busca resistência, funcionalidade e facilidade no dia a dia, o Carrinho de Carga Plataforma da Brazil Home Living é a escolha certa.
+    - generic [ref=e155]:
+      - generic [ref=e156]:
+        - heading "PERGUNTAS FREQUENTES" [level=2] [ref=e157]
+        - paragraph [ref=e158]: Tire suas dúvidas sobre este produto.
+      - generic [ref=e159]:
+        - generic [ref=e160]:
+          - img "Check" [ref=e163]
+          - generic [ref=e164]:
+            - generic [ref=e165]: Quantos kg ele suporta?
+            - paragraph [ref=e166]: Até 150kg
+        - generic [ref=e167]:
+          - img "Check" [ref=e170]
+          - generic [ref=e171]:
+            - generic [ref=e172]: Há trava de segurança?
+            - paragraph [ref=e173]: Sim
+        - generic [ref=e174]:
+          - img "Check" [ref=e177]
+          - generic [ref=e178]:
+            - generic [ref=e179]: O produto é entregue montado ou desmontado?
+            - paragraph [ref=e180]: Desmontado -- sua montagem leva menos de 15 minutos!
+        - generic [ref=e181]:
+          - img "Check" [ref=e184]
+          - generic [ref=e185]:
+            - generic [ref=e186]: TEM MANUAL DE MONTAGEM?
+            - paragraph [ref=e187]: Sim, o produto acompanha manual de montagem.
+    - generic [ref=e189]:
+      - heading "AVALIAÇÕES DOS CLIENTES" [level=2] [ref=e191]: AVALIAÇÕESDOS CLIENTES
+      - generic [ref=e192]:
+        - button [ref=e193] [cursor=pointer]:
+          - img "Anterior" [ref=e194]
+        - generic [ref=e197]:
+          - generic [ref=e198]:
+            - generic [ref=e199]:
+              - generic [ref=e200]:
+                - generic [ref=e201]: E
+                - heading "EDGARD" [level=3] [ref=e202]
+              - generic [ref=e203]:
+                - generic [ref=e204]: ★
+                - generic [ref=e205]: ★
+                - generic [ref=e206]: ★
+                - generic [ref=e207]: ★
+                - generic [ref=e208]: ★
+            - paragraph [ref=e209]: ótimo produto, fácil de montar!
+            - generic [ref=e210]: 1 semana atrás
+            - generic [ref=e211]: Fotos
+          - generic [ref=e217]:
+            - generic [ref=e218]:
+              - generic [ref=e219]:
+                - generic [ref=e220]: M
+                - heading "MARTA R." [level=3] [ref=e221]
+              - generic [ref=e222]:
+                - generic [ref=e223]: ★
+                - generic [ref=e224]: ★
+                - generic [ref=e225]: ★
+                - generic [ref=e226]: ★
+                - generic [ref=e227]: ★
+            - paragraph [ref=e228]: Muito bom custo-benefício. Só gostaria que a alça tivesse ajuste de altura. Fora isso, a base e o freio funcionam bem.
+            - generic [ref=e229]: 1 semana atrás
+            - generic [ref=e230]: Fotos
+          - generic [ref=e236]:
+            - generic [ref=e237]:
+              - generic [ref=e238]:
+                - generic [ref=e239]: R
+                - heading "RICARDO TEIXEIRA" [level=3] [ref=e240]
+              - generic [ref=e241]:
+                - generic [ref=e242]: ★
+                - generic [ref=e243]: ★
+                - generic [ref=e244]: ★
+                - generic [ref=e245]: ★
+                - generic [ref=e246]: ★
+            - paragraph [ref=e247]: Surpreendeu pela robustez. Levei ferramentas e materiais de construção por semanas e nada de folgas. Montagem simples. Entrega dentro do prazo.
+            - generic [ref=e248]: 1 semana atrás
+        - button [ref=e249] [cursor=pointer]:
+          - img "Próximo" [ref=e250]
+  - contentinfo [ref=e251]:
+    - generic [ref=e254]:
+      - generic [ref=e255]:
+        - paragraph [ref=e256]:
+          - link "(11) 99480-4974" [ref=e257] [cursor=pointer]:
+            - /url: tel:11994804974
+        - paragraph [ref=e258]:
+          - link "contato@brazilhome.com.br" [ref=e259] [cursor=pointer]:
+            - /url: mailto:contato@brazilhome.com.br
+        - paragraph [ref=e260]: 08:00 às 19:00 - Segunda-feira a Sexta-feira
+      - generic [ref=e261]:
+        - img "Brazil Home Living" [ref=e263]
+        - generic [ref=e264]:
+          - link [ref=e265] [cursor=pointer]:
+            - /url: https://www.instagram.com/brazilhomeliving/
+            - img "Instagram" [ref=e266]
+          - link [ref=e267] [cursor=pointer]:
+            - /url: https://www.youtube.com
+            - img "YouTube" [ref=e268]
+          - link [ref=e269] [cursor=pointer]:
+            - /url: https://www.tiktok.com/@brazilhomeliving
+            - img "TikTok" [ref=e270]
+      - generic [ref=e271]:
+        - img "Visa" [ref=e272]
+        - img "Mastercard" [ref=e273]
+        - img "PayPal" [ref=e274]
+        - img "Apple Pay" [ref=e275]
+        - img "Google Pay" [ref=e276]
+        - img "Affirm" [ref=e277]
+        - img "Google Pay" [ref=e278]
+        - img "Affirm" [ref=e279]
+    - generic [ref=e281]:
+      - navigation [ref=e282]:
+        - list [ref=e283]:
+          - listitem [ref=e284]:
+            - link "Home" [ref=e285] [cursor=pointer]:
+              - /url: https://brazilhome.com.br/
+          - listitem [ref=e286]:
+            - link "Quem Somos" [ref=e287] [cursor=pointer]:
+              - /url: https://brazilhome.com.br/quem-somos/
+          - listitem [ref=e288]:
+            - link "Todos os produtos" [ref=e289] [cursor=pointer]:
+              - /url: https://brazilhome.com.br/todos-os-produtos/
+          - listitem [ref=e290]:
+            - link "Fale conosco" [ref=e291] [cursor=pointer]:
+              - /url: https://brazilhome.com.br/fale-conosco/
+          - listitem [ref=e292]:
+            - link "Blog" [ref=e293] [cursor=pointer]:
+              - /url: https://brazilhome.com.br/blog/
+      - generic [ref=e294]:
+        - paragraph [ref=e295]: © 2025 - Todos os direitos reservados
+        - link "Política de Privacidade" [ref=e296] [cursor=pointer]:
+          - /url: /politica-de-privacidade
+  - status [ref=e297]
+  - link [ref=e298] [cursor=pointer]:
+    - /url: https://tintim.link/whatsapp/a88f3353-b859-484d-b959-ec97963727c3/0bab8ae7-d9cd-4a28-8e5a-dc2b690d0d90

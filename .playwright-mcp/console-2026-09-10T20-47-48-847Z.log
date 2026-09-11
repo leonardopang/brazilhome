@@ -1,0 +1,5 @@
+[    1029ms] [LOG] PixelYourSite Free version 11.4.0 @ http://brazil-home.local/blog/:65
+[    1072ms] [LOG] JQMIGRATE: Migrate is installed, version 3.4.1 @ http://brazil-home.local/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1:1
+[    1160ms] [LOG] 🔍 Initializing mobile search modal... @ http://brazil-home.local/wp-content/themes/brazil-home/assets/js/main.js?ver=7.1:176
+[    1160ms] [LOG] 📱 Mobile search elements: {button: true, section: true, input: true} @ http://brazil-home.local/wp-content/themes/brazil-home/assets/js/main.js?ver=7.1:184
+[    1161ms] [WARNING] Review modal não encontrado. Script não executado. @ http://brazil-home.local/wp-content/themes/brazil-home/assets/js/main.js?ver=7.1:1620

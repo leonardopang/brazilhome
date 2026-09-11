@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Brazil Home Living</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/homepage.css">
+    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-top">
+            <div class="header-top-container">
+                <div class="header-top-content">
+                    <a href="quem-somos.html" class="header-top-text">Quem somos</a>
+                    <span class="header-top-text mobile-header-top-text-hide">Frete grátis para todo o Brasil</span>
+                    <a href="contato.html" class="header-top-text">Fale conosco</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <div class="header-main-container">
+                <div class="header-main-content">
+                    <div class="logo-section">
+                        <a href="index.html">
+                            <img src="../assets/images/logo.png" alt="Brazil Home Living" class="main-logo">
+                        </a>
+                    </div>
+
+                    <div class="search-section">
+                        <div class="search-bar">
+                            <input type="text" placeholder="QUE ESTÁ PROCURANDO?" class="search-input">
+                            <button class="search-button">
+                                <img src="../assets/images/search-01.png" alt="Buscar">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="user-actions">
+                        <div class="user-account">
+                            <span class="user-greeting">Olá Rodrigo</span>
+                            <img src="../assets/images/user-circle.png" alt="Usuário" class="user-icon">
+                        </div>
+                        <div class="shopping-cart">
+                            <img src="../assets/images/shopping-cart-01.png" alt="Carrinho" class="cart-icon">
+                            <span class="cart-count"></span>
+                        </div>
+                        <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                            <span class="hamburger-line"></span>
+                            <span class="hamburger-line"></span>
+                            <span class="hamburger-line"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="main-navigation">
+            <div class="header-nav-container">
+                <ul class="nav-menu" id="mobile-menu">
+                    <li class="nav-item"><a href="../pages/categoria.html" class="nav-link">GAZEBOS</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">CHURRASQUEIRAS</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">DEPÓSITOS</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">CARRINHOS DE CARGA</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="blog-main">
+        <!-- Blog Header -->
+        <section class="blog-header-section">
+            <div class="blog-container">
+                <div class="blog-header">
+                    <h1 class="blog-main-title">Blog</h1>
+                    <h2 class="blog-main-subtitle">FIQUE POR DENTRO COM NOSSO BLOG</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Blog Posts -->
+        <section class="blog-featured-section">
+            <div class="blog-featured-arrows">
+                <button class="arrow-button arrow-prev" id="blog-prev">
+                    <img src="../assets/images/left-arrow.png" alt="Previous">
+                </button>
+                <button class="arrow-button arrow-next" id="blog-next">
+                    <img src="../assets/images/right-arrow.png" alt="Next">
+                </button>
+            </div>
+            <div class="blog-container">
+                <div class="blog-carousel">
+                    <a href="/post.html" class="blog-card-link">
+                        <article class="blog-card">
+                            <div class="blog-card-image">
+                                <img src="../assets/images/blog.png" alt="Casa moderna">
+                            </div>
+                            <div class="blog-card-content">
+                                <div class="blog-card-content-inner">
+                                    <span class="blog-category">CATEGORIA</span>
+                                    <h3 class="blog-card-title">SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING
+                                        INDUSTRY.</h3>
+                                </div>
+                                <img class="blog-read-more" src="../assets/images/arrow-up-right.png" alt="Ler mais">
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="/post.html" class="blog-card-link">
+                        <article class="blog-card">
+                            <div class="blog-card-image">
+                                <img src="../assets/images/blog.png" alt="Casa moderna">
+                            </div>
+                            <div class="blog-card-content">
+                                <div class="blog-card-content-inner">
+                                    <span class="blog-category">CATEGORIA</span>
+                                    <h3 class="blog-card-title">SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING
+                                        INDUSTRY.</h3>
+                                </div>
+                                <img class="blog-read-more" src="../assets/images/arrow-up-right.png" alt="Ler mais">
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="/post.html" class="blog-card-link">
+                        <article class="blog-card">
+                            <div class="blog-card-image">
+                                <img src="../assets/images/blog.png" alt="Casa moderna">
+                            </div>
+                            <div class="blog-card-content">
+                                <div class="blog-card-content-inner">
+                                    <span class="blog-category">CATEGORIA</span>
+                                    <h3 class="blog-card-title">SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING
+                                        INDUSTRY.</h3>
+                                </div>
+                                <img class="blog-read-more" src="../assets/images/arrow-up-right.png" alt="Ler mais">
+                            </div>
+                        </article>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Posts Section -->
+        <section class="blog-posts-section">
+            <div class="blog-container">
+                <div class="blog-section-header">
+                    <h2 class="blog-section-title">ÚLTIMAS POSTAGENS</h2>
+                </div>
+
+                <div class="blog-posts-grid">
+                    <a href="/post.html" class="blog-card-link">
+                        <article class="blog-card">
+                            <div class="blog-card-image">
+                                <img src="../assets/images/blog.png" alt="Casa moderna">
+                            </div>
+                            <div class="blog-card-content">
+                                <div class="blog-card-content-inner">
+                                    <span class="blog-category">CATEGORIA</span>
+                                    <h3 class="blog-card-title">SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING
+                                        INDUSTRY.</h3>
+                                </div>
+                                <img class="blog-read-more" src="../assets/images/arrow-up-right.png" alt="Ler mais">
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="/post.html" class="blog-card-link">
+                        <article class="blog-card">
+                            <div class="blog-card-image">
+                                <img src="../assets/images/blog.png" alt="Casa moderna">
+                            </div>
+                            <div class="blog-card-content">
+                                <div class="blog-card-content-inner">
+                                    <span class="blog-category">CATEGORIA</span>
+                                    <h3 class="blog-card-title">SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING
+                                        INDUSTRY.</h3>
+                                </div>
+                                <img class="blog-read-more" src="../assets/images/arrow-up-right.png" alt="Ler mais">
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="/post.html" class="blog-card-link">
+                        <article class="blog-card">
+                            <div class="blog-card-image">
+                                <img src="../assets/images/blog.png" alt="Casa moderna">
+                            </div>
+                            <div class="blog-card-content">
+                                <div class="blog-card-content-inner">
+                                    <span class="blog-category">CATEGORIA</span>
+                                    <h3 class="blog-card-title">SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING
+                                        INDUSTRY.</h3>
+                                </div>
+                                <img class="blog-read-more" src="../assets/images/arrow-up-right.png" alt="Ler mais">
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="/post.html" class="blog-card-link">
+                        <article class="blog-card">
+                            <div class="blog-card-image">
+                                <img src="../assets/images/blog.png" alt="Casa moderna">
+                            </div>
+                            <div class="blog-card-content">
+                                <div class="blog-card-content-inner">
+                                    <span class="blog-category">CATEGORIA</span>
+                                    <h3 class="blog-card-title">SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING
+                                        INDUSTRY.</h3>
+                                </div>
+                                <img class="blog-read-more" src="../assets/images/arrow-up-right.png" alt="Ler mais">
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="/post.html" class="blog-card-link">
+                        <article class="blog-card">
+                            <div class="blog-card-image">
+                                <img src="../assets/images/blog.png" alt="Casa moderna">
+                            </div>
+                            <div class="blog-card-content">
+                                <div class="blog-card-content-inner">
+                                    <span class="blog-category">CATEGORIA</span>
+                                    <h3 class="blog-card-title">SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING
+                                        INDUSTRY.</h3>
+                                </div>
+                                <img class="blog-read-more" src="../assets/images/arrow-up-right.png" alt="Ler mais">
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="/post.html" class="blog-card-link">
+                        <article class="blog-card">
+                            <div class="blog-card-image">
+                                <img src="../assets/images/blog.png" alt="Casa moderna">
+                            </div>
+                            <div class="blog-card-content">
+                                <div class="blog-card-content-inner">
+                                    <span class="blog-category">CATEGORIA</span>
+                                    <h3 class="blog-card-title">SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING
+                                        INDUSTRY.</h3>
+                                </div>
+                                <img class="blog-read-more" src="../assets/images/arrow-up-right.png" alt="Ler mais">
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="/post.html" class="blog-card-link">
+                        <article class="blog-card">
+                            <div class="blog-card-image">
+                                <img src="../assets/images/blog.png" alt="Casa moderna">
+                            </div>
+                            <div class="blog-card-content">
+                                <div class="blog-card-content-inner">
+                                    <span class="blog-category">CATEGORIA</span>
+                                    <h3 class="blog-card-title">SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING
+                                        INDUSTRY.</h3>
+                                </div>
+                                <img class="blog-read-more" src="../assets/images/arrow-up-right.png" alt="Ler mais">
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="/post.html" class="blog-card-link">
+                        <article class="blog-card">
+                            <div class="blog-card-image">
+                                <img src="../assets/images/blog.png" alt="Casa moderna">
+                            </div>
+                            <div class="blog-card-content">
+                                <div class="blog-card-content-inner">
+                                    <span class="blog-category">CATEGORIA</span>
+                                    <h3 class="blog-card-title">SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING
+                                        INDUSTRY.</h3>
+                                </div>
+                                <img class="blog-read-more" src="../assets/images/arrow-up-right.png" alt="Ler mais">
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="/post.html" class="blog-card-link">
+                        <article class="blog-card">
+                            <div class="blog-card-image">
+                                <img src="../assets/images/blog.png" alt="Casa moderna">
+                            </div>
+                            <div class="blog-card-content">
+                                <div class="blog-card-content-inner">
+                                    <span class="blog-category">CATEGORIA</span>
+                                    <h3 class="blog-card-title">SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING
+                                        INDUSTRY.</h3>
+                                </div>
+                                <img class="blog-read-more" src="../assets/images/arrow-up-right.png" alt="Ler mais">
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="/post.html" class="blog-card-link">
+                        <article class="blog-card">
+                            <div class="blog-card-image">
+                                <img src="../assets/images/blog.png" alt="Casa moderna">
+                            </div>
+                            <div class="blog-card-content">
+                                <div class="blog-card-content-inner">
+                                    <span class="blog-category">CATEGORIA</span>
+                                    <h3 class="blog-card-title">SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING
+                                        INDUSTRY.</h3>
+                                </div>
+                                <img class="blog-read-more" src="../assets/images/arrow-up-right.png" alt="Ler mais">
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="/post.html" class="blog-card-link">
+                        <article class="blog-card">
+                            <div class="blog-card-image">
+                                <img src="../assets/images/blog.png" alt="Casa moderna">
+                            </div>
+                            <div class="blog-card-content">
+                                <div class="blog-card-content-inner">
+                                    <span class="blog-category">CATEGORIA</span>
+                                    <h3 class="blog-card-title">SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING
+                                        INDUSTRY.</h3>
+                                </div>
+                                <img class="blog-read-more" src="../assets/images/arrow-up-right.png" alt="Ler mais">
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="/post.html" class="blog-card-link">
+                        <article class="blog-card">
+                            <div class="blog-card-image">
+                                <img src="../assets/images/blog.png" alt="Casa moderna">
+                            </div>
+                            <div class="blog-card-content">
+                                <div class="blog-card-content-inner">
+                                    <span class="blog-category">CATEGORIA</span>
+                                    <h3 class="blog-card-title">SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING
+                                        INDUSTRY.</h3>
+                                </div>
+                                <img class="blog-read-more" src="../assets/images/arrow-up-right.png" alt="Ler mais">
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="/post.html" class="blog-card-link">
+                        <article class="blog-card">
+                            <div class="blog-card-image">
+                                <img src="../assets/images/blog.png" alt="Casa moderna">
+                            </div>
+                            <div class="blog-card-content">
+                                <div class="blog-card-content-inner">
+                                    <span class="blog-category">CATEGORIA</span>
+                                    <h3 class="blog-card-title">SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING
+                                        INDUSTRY.</h3>
+                                </div>
+                                <img class="blog-read-more" src="../assets/images/arrow-up-right.png" alt="Ler mais">
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="/post.html" class="blog-card-link">
+                        <article class="blog-card">
+                            <div class="blog-card-image">
+                                <img src="../assets/images/blog.png" alt="Casa moderna">
+                            </div>
+                            <div class="blog-card-content">
+                                <div class="blog-card-content-inner">
+                                    <span class="blog-category">CATEGORIA</span>
+                                    <h3 class="blog-card-title">SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING
+                                        INDUSTRY.</h3>
+                                </div>
+                                <img class="blog-read-more" src="../assets/images/arrow-up-right.png" alt="Ler mais">
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="/post.html" class="blog-card-link">
+                        <article class="blog-card">
+                            <div class="blog-card-image">
+                                <img src="../assets/images/blog.png" alt="Casa moderna">
+                            </div>
+                            <div class="blog-card-content">
+                                <div class="blog-card-content-inner">
+                                    <span class="blog-category">CATEGORIA</span>
+                                    <h3 class="blog-card-title">SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING
+                                        INDUSTRY.</h3>
+                                </div>
+                                <img class="blog-read-more" src="../assets/images/arrow-up-right.png" alt="Ler mais">
+                            </div>
+                        </article>
+                    </a>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <button class="pagination-btn active">01</button>
+                    <button class="pagination-btn">02</button>
+                    <button class="pagination-btn">03</button>
+                    <button class="pagination-btn">04</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-contact">
+                        <p class="contact-phone">(11)97672-4546, (11)97672-4546</p>
+                        <p class="contact-email">victorgaleazzo@live.com</p>
+                        <p class="contact-hours">08:00 às 19:00</p>
+                    </div>
+
+                    <div class="footer-center">
+                        <div class="footer-logo">
+                            <img src="../assets/images/logo.png" alt="Brazil Home Living" class="footer-logo-img">
+                        </div>
+                        <div class="social-media">
+                            <a href="#" class="social-link">
+                                <img src="../assets/images/facebook-01.png" alt="Facebook">
+                            </a>
+                            <a href="#" class="social-link">
+                                <img src="../assets/images/instagram.png" alt="Instagram">
+                            </a>
+                            <a href="#" class="social-link">
+                                <img src="../assets/images/whatsapp.png" alt="WhatsApp">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="payment-methods">
+                        <img src="../assets/images/visa.png" alt="Visa" class="payment-icon">
+                        <img src="../assets/images/amex.png" alt="Amex" class="payment-icon">
+                        <img src="../assets/images/mastercard.png" alt="Mastercard" class="payment-icon">
+                        <img src="../assets/images/applepay.png" alt="Apple Pay" class="payment-icon">
+                        <img src="../assets/images/googlepay.png" alt="Google Pay" class="payment-icon">
+                        <img src="../assets/images/affirm.png" alt="Affirm" class="payment-icon">
+                        <img src="../assets/images/paypal.png" alt="PayPal" class="payment-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-container">
+                <nav class="footer-nav">
+                    <ul class="footer-menu">
+                        <li><a href="index.html" class="footer-link">HOME</a></li>
+                        <li><a href="quem-somos.html" class="footer-link">QUEM SOMOS</a></li>
+                        <li><a href="categoria.html" class="footer-link">GAZEBOS</a></li>
+                        <li><a href="#" class="footer-link">CHURRASQUEIRAS</a></li>
+                        <li><a href="#" class="footer-link">DEPÓSITOS</a></li>
+                        <li><a href="#" class="footer-link">CARRINHOS DE CARGA</a></li>
+                        <li><a href="contato.html" class="footer-link">FALE CONOSCO</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-legal">
+                    <p class="copyright">© 2025 - Todos os direitos reservados</p>
+                    <a href="#" target="_blank" class="legal-link">Política de Privacidade</a>
+                    <a href="https://upsites.digital?origin=brazil-home" target="_blank" class="legal-link">Criação de
+                        Sites por Upsites</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery and Slick Carousel JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/homepage.js"></script>
+    <script src="../js/blog-carousel.js"></script>
+</body>
+
+</html>

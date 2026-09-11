@@ -1,0 +1,105 @@
+/* Category Page Styles */
+
+/* Category Header */
+.category-header {
+  background-color: #fff;
+  /*margin-top: 54px;*/
+  margin-bottom: 46px;
+}
+
+.category-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1e3a8a;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+/* Products Section */
+.products-section {
+  padding-top: 49px;
+  padding-bottom: 49px;
+  background-color: #ffffff;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-bottom: 3rem;
+  justify-items: center;
+}
+
+/* Product card styling (.product-card) lives in assets/css/product-card.css,
+   shared with every other page that renders a product card. */
+
+.product-info a {
+  text-decoration: none;
+}
+
+/* FAQ Section styling moved to assets/css/faq-section.css, shared with the
+   single product page's FAQ block. */
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .products-grid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .category-title {
+    font-size: 2rem;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .category-header {
+    padding: 1.5rem 0 1rem;
+  }
+
+  .category-title {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+
+  .products-section {
+    padding: 2rem 0;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (max-width: 680px) {
+  .category-title {
+    font-size: 1.5rem;
+  }
+
+  .products-section {
+    padding: 1.5rem 0;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+.category-products-section {
+  min-height: 400px;
+}
+
+.no-products-found {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

@@ -1,0 +1,248 @@
+/*
+ * Shared "Perguntas Frequentes" (FAQ) section, used on the category/shop
+ * archives and on the single product page. Kept in its own file so it can
+ * be enqueued wherever a .faq-section renders without pulling in the rest
+ * of category.css.
+ */
+
+.faq-section {
+  background-color: #fff;
+  margin-bottom: 49px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1203px;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 100px;
+  margin-top: 49px;
+  border-top: 1px solid #cfdbe8;
+}
+
+.faq-intro {
+  max-width: 403px;
+}
+
+.faq-title {
+  font-family: Manrope, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #1c4067;
+  margin-bottom: 0;
+}
+
+.faq-description {
+  font-family: Manrope, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #707d8c;
+  margin-top: 25px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 54px;
+  max-width: 593px;
+}
+
+.faq-item {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  gap: 29px;
+}
+
+.faq-question {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.faq-question-icon-container {
+  background-color: #f8f2e6;
+  border-radius: 7px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-question-icon-container img {
+  width: 26px;
+  height: 26px;
+}
+
+.faq-icon {
+  width: 26px;
+  height: 26px;
+}
+
+.faq-question-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-question-text {
+  font-family: Manrope, sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #1c4067;
+  max-width: 400px;
+  margin: 0;
+}
+
+.faq-question-text-container p {
+  font-family: Manrope, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #707d8c;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .faq-content {
+    max-width: 95%;
+    padding: 80px 20px 0;
+  }
+
+  .faq-intro {
+    max-width: 350px;
+  }
+
+  .faq-list {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .faq-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding: 60px 20px 0;
+  }
+
+  .faq-intro {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .faq-list {
+    max-width: 100%;
+  }
+
+  .faq-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .faq-content {
+    padding: 40px 15px 0;
+    gap: 40px;
+  }
+
+  .faq-title {
+    font-size: 28px;
+  }
+
+  .faq-list {
+    gap: 40px;
+  }
+
+  .faq-item {
+    gap: 20px;
+  }
+
+  .faq-question-icon-container {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+  }
+
+  .faq-question-icon-container img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .faq-question-text {
+    font-size: 18px;
+    max-width: 100%;
+  }
+
+  .faq-question-text-container p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 680px) {
+  .faq-content {
+    padding: 30px 10px 0;
+    gap: 30px;
+  }
+
+  .faq-title {
+    font-size: 24px;
+  }
+
+  .faq-description {
+    font-size: 14px;
+  }
+
+  .faq-list {
+    gap: 30px;
+  }
+
+  .faq-item {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .faq-question {
+    justify-content: center;
+  }
+
+  .faq-question-icon-container {
+    width: 50px;
+    height: 50px;
+  }
+
+  .faq-question-icon-container img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .faq-question-text {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .faq-question-text-container {
+    align-items: center;
+    text-align: center;
+  }
+
+  .faq-question-text-container p {
+    font-size: 13px;
+    text-align: center;
+  }
+}

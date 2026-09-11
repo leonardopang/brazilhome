@@ -1,0 +1,178 @@
+- generic [active] [ref=f5e1]:
+  - banner [ref=f5e2]:
+    - generic [ref=f5e5]:
+      - link "Quem somos" [ref=f5e6] [cursor=pointer]:
+        - /url: http://brazil-home.local/quem-somos
+      - generic [ref=f5e8]:
+        - generic [ref=f5e9]:
+          - img "FRETE GRÁTIS PARA TODO O BRASIL" [ref=f5e10]
+          - text: FRETE GRÁTIS PARA TODO O BRASIL
+        - generic [ref=f5e11]:
+          - img "ENVIO NO MESMO DIA SÃO PAULO" [ref=f5e12]
+          - text: ENVIO NO MESMO DIA SÃO PAULO
+        - generic [ref=f5e13]:
+          - img "DESCONTO DE 5% NO PIX" [ref=f5e14]
+          - text: DESCONTO DE 5% NO PIX
+      - link "Fale conosco" [ref=f5e15] [cursor=pointer]:
+        - /url: http://brazil-home.local/fale-conosco
+    - generic [ref=f5e18]:
+      - link [ref=f5e20] [cursor=pointer]:
+        - /url: http://brazil-home.local
+        - img "Brazil Home Living" [ref=f5e21]
+      - generic [ref=f5e23]:
+        - textbox "QUE ESTÁ PROCURANDO?" [ref=f5e24]
+        - button [ref=f5e25] [cursor=pointer]:
+          - img "Buscar" [ref=f5e26]
+      - generic [ref=f5e27]:
+        - link "Entrar Usuário" [ref=f5e29] [cursor=pointer]:
+          - /url: http://brazil-home.local/minha-conta/
+          - generic [ref=f5e30]: Entrar
+          - img "Usuário" [ref=f5e31]
+        - link [ref=f5e33] [cursor=pointer]:
+          - /url: http://brazil-home.local/carrinho/
+          - img "Carrinho" [ref=f5e34]
+    - navigation [ref=f5e35]:
+      - list [ref=f5e37]:
+        - listitem [ref=f5e38]:
+          - link "Todos os produtos" [ref=f5e39] [cursor=pointer]:
+            - /url: http://brazil-home.local/todos-os-produtos/
+        - listitem [ref=f5e40]:
+          - link "CARRINHOS DE CARGA" [ref=f5e41] [cursor=pointer]:
+            - /url: http://brazil-home.local/categoria-produto/carrinhos-de-carga/
+        - listitem [ref=f5e42]:
+          - link "DEPÓSITOS DE AÇO" [ref=f5e43] [cursor=pointer]:
+            - /url: http://brazil-home.local/categoria-produto/depositos-de-aco/
+        - listitem [ref=f5e44]:
+          - link "GAZEBO E PERGOLADO" [ref=f5e45] [cursor=pointer]:
+            - /url: http://brazil-home.local/categoria-produto/gazebos/
+  - main [ref=f5e46]:
+    - generic [ref=f5e48]:
+      - heading "Soluções para Áreas Externas" [level=1] [ref=f5e49]
+      - heading "Brazil Home Living" [level=2] [ref=f5e50]
+      - paragraph [ref=f5e51]: Uma marca brasileira com presença nacional, levando qualidade e confiança para todos os cantos do país.
+    - generic [ref=f5e54]:
+      - img "Gazebo" [ref=f5e55]
+      - img "Gazebo" [ref=f5e56]
+      - img "Gazebo" [ref=f5e57]
+    - generic [ref=f5e60]:
+      - generic [ref=f5e61]:
+        - heading "CONSTRUÍDA PARA DURAR" [level=2] [ref=f5e62]
+        - paragraph [ref=f5e63]: "A Brazil Home Living nasceu com raízes profundas no Brasil — e carrega no nome, no atendimento e na essência o orgulho de ser uma marca brasileira. Desde o início, o compromisso foi claro: levar soluções de qualidade para todos os cantos do país, sem exceção. Hoje, a empresa tem atendimento em todo o território nacional, com uma operação logística integrada, preparada para atender de Norte a Sul do páis, de grandes centros urbanos a pequenas cidades do interior. Não há um único quilômetro de solo brasileiro onde nós não entregamos. Esse alcance é o reflexo de um trabalho feito com responsabilidade e, acima de tudo, com respeito às necessidades de cada cliente, em cada região. Porque viver o lado de fora é um direito de todos, em todo o Brasil."
+      - generic [ref=f5e64]:
+        - generic [ref=f5e65]:
+          - generic [ref=f5e66]:
+            - generic [ref=f5e67] [cursor=pointer]: PRATICIDADE
+            - generic [ref=f5e69] [cursor=pointer]: ESTILO DE VIDA
+            - generic [ref=f5e71] [cursor=pointer]: CONFIANÇA
+            - generic [ref=f5e73] [cursor=pointer]: QUALIDADE
+            - img "Circle Icon" [ref=f5e78]
+          - heading [level=3]
+        - generic [ref=f5e79]:
+          - generic [ref=f5e81]:
+            - generic [ref=f5e82]: PROPÓSITO
+            - generic [ref=f5e84]: MISSÃO
+            - generic [ref=f5e86]: IMPACTO
+          - heading [level=3]
+          - heading [level=3]
+        - generic [ref=f5e89]:
+          - img "Durabilidade" [ref=f5e91]
+          - heading "Qualidade, confiança, inovação e estilo de vida." [level=3] [ref=f5e92]
+    - generic [ref=f5e96]:
+      - generic [ref=f5e97]:
+        - heading "PRESENÇA NACIONAL" [level=3] [ref=f5e98]
+        - paragraph [ref=f5e99]: DE BRASILEIROS PARA BRASILEIROS
+      - generic [ref=f5e100]:
+        - img "NL" [ref=f5e101]
+        - img "NL" [ref=f5e102]
+        - img "NL" [ref=f5e103]
+    - generic [ref=f5e105]:
+      - paragraph [ref=f5e106]: "A Brazil Home Living nasceu com raízes profundas no Brasil — e carrega no nome, no atendimento e na essência o orgulho de ser uma marca brasileira. Desde o início, o compromisso foi claro: levar soluções de qualidade para todos os cantos do país, sem exceção. Hoje, a empresa tem atendimento em todo o território nacional, com uma operação logística integrada, preparada para atender de Norte a Sul do páis, de grandes centros urbanos a pequenas cidades do interior. Não há um único quilômetro de solo brasileiro onde nós não entregamos. Esse alcance é o reflexo de um trabalho feito com responsabilidade e, acima de tudo, com respeito às necessidades de cada cliente, em cada região. Porque viver o lado de fora é um direito de todos, em todo o Brasil."
+      - generic [ref=f5e107]:
+        - generic [ref=f5e109]:
+          - img "Legend Item Color" [ref=f5e111]
+          - generic [ref=f5e112]: Entrega em todo o Brasil
+        - img "Map" [ref=f5e113]
+    - generic [ref=f5e115]:
+      - heading "NÃO DEIXE DE COMPRAR..." [level=2] [ref=f5e117]
+      - article [ref=f5e119] [cursor=pointer]:
+        - link [ref=f5e121]:
+          - /url: http://brazil-home.local/produto/carrinho-de-carga-150-kg/
+          - img "Carrinho de Carga Dobrável Plataforma até 150kg" [ref=f5e122]
+        - generic [ref=f5e123]:
+          - link [ref=f5e124]:
+            - /url: http://brazil-home.local/produto/carrinho-de-carga-150-kg/
+            - heading "CARRINHO DE CARGA DOBRáVEL PLATAFORMA ATé 150KG" [level=3] [ref=f5e125]
+          - generic [ref=f5e126]:
+            - generic [ref=f5e127]: R$499,90
+            - generic [ref=f5e131]:
+              - text: Em até
+              - mark [ref=f5e132]:
+                - text: 6x de
+                - generic [ref=f5e133]: R$83,32
+              - text: sem juros
+            - text: 5% OFF NO PIX
+          - link "COMPRAR AGORA" [ref=f5e135]:
+            - /url: http://brazil-home.local/produto/carrinho-de-carga-150-kg/
+          - generic [ref=f5e136]:
+            - generic [ref=f5e137]:
+              - img "Frete grátis" [ref=f5e138]
+              - text: FRETE GRÁTIS
+            - generic [ref=f5e139]:
+              - img "Em estoque" [ref=f5e140]
+              - text: Em estoque
+  - contentinfo [ref=f5e141]:
+    - generic [ref=f5e144]:
+      - generic [ref=f5e145]:
+        - paragraph [ref=f5e146]:
+          - link "(11) 99480-4974" [ref=f5e147] [cursor=pointer]:
+            - /url: tel:11994804974
+        - paragraph [ref=f5e148]:
+          - link "contato@brazilhome.com.br" [ref=f5e149] [cursor=pointer]:
+            - /url: mailto:contato@brazilhome.com.br
+        - paragraph [ref=f5e150]: 08:00 às 19:00 - Segunda-feira a Sexta-feira
+      - generic [ref=f5e151]:
+        - img "Brazil Home Living" [ref=f5e153]
+        - generic [ref=f5e154]:
+          - link [ref=f5e155] [cursor=pointer]:
+            - /url: https://www.instagram.com/brazilhomeliving/
+            - img "Instagram" [ref=f5e156]
+          - link [ref=f5e157] [cursor=pointer]:
+            - /url: https://www.youtube.com
+            - img "YouTube" [ref=f5e158]
+          - link [ref=f5e159] [cursor=pointer]:
+            - /url: https://www.tiktok.com/@brazilhomeliving
+            - img "TikTok" [ref=f5e160]
+      - generic [ref=f5e161]:
+        - img "Visa" [ref=f5e162]
+        - img "Mastercard" [ref=f5e163]
+        - img "PayPal" [ref=f5e164]
+        - img "Apple Pay" [ref=f5e165]
+        - img "Google Pay" [ref=f5e166]
+        - img "Affirm" [ref=f5e167]
+        - img "Google Pay" [ref=f5e168]
+        - img "Affirm" [ref=f5e169]
+    - generic [ref=f5e171]:
+      - navigation [ref=f5e172]:
+        - list [ref=f5e173]:
+          - listitem [ref=f5e174]:
+            - link "Home" [ref=f5e175] [cursor=pointer]:
+              - /url: http://brazil-home.local/
+          - listitem [ref=f5e176]:
+            - link "Quem Somos" [ref=f5e177] [cursor=pointer]:
+              - /url: http://brazil-home.local/quem-somos/
+          - listitem [ref=f5e178]:
+            - link "Todos os produtos" [ref=f5e179] [cursor=pointer]:
+              - /url: http://brazil-home.local/todos-os-produtos/
+          - listitem [ref=f5e180]:
+            - link "Fale conosco" [ref=f5e181] [cursor=pointer]:
+              - /url: http://brazil-home.local/fale-conosco/
+          - listitem [ref=f5e182]:
+            - link "Blog" [ref=f5e183] [cursor=pointer]:
+              - /url: http://brazil-home.local/blog/
+      - generic [ref=f5e184]:
+        - paragraph [ref=f5e185]: © 2025 - Todos os direitos reservados
+        - link "Política de Privacidade" [ref=f5e186] [cursor=pointer]:
+          - /url: /politica-de-privacidade
+  - status [ref=f5e188]
+  - link [ref=f5e189] [cursor=pointer]:
+    - /url: https://tintim.link/whatsapp/a88f3353-b859-484d-b959-ec97963727c3/0bab8ae7-d9cd-4a28-8e5a-dc2b690d0d90

@@ -1,0 +1,2125 @@
+/* The checkout page content is wrapped in a WordPress "Preformatted" block
+   (pre.wp-block-preformatted), which sets white-space: pre and is inherited
+   by every element inside it, preventing text from wrapping (product names,
+   payment instructions, etc. get cut off instead of wrapping). Neutralize it
+   here since the block should really be removed from the page content. */
+.finalizar-compra-page pre.wp-block-preformatted {
+    white-space: normal;
+    font-family: inherit;
+    margin: 0;
+}
+
+/* Checkout style */
+.finalizar-compra-page .checkout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 63px;
+    max-width: 1203px;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+
+.finalizar-compra-page .woocommerce {
+    margin-bottom: 100px;
+}
+
+.finalizar-compra-page .form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 28px;
+}
+
+.finalizar-compra-page .form-row label, .finalizar-compra-page .form-row-wide {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: -1%;
+    color: #707D8C;
+}
+
+.finalizar-compra-page .payment_box .form-row-wide {
+    margin-bottom: 6px;
+}
+
+
+
+.finalizar-compra-page .form-row .woocommerce-input-wrapper {
+    width: 100%;
+    margin-top: 6px;
+
+}
+
+.finalizar-compra-page .form-row .woocommerce-input-wrapper input, .finalizar-compra-page .form-row .woocommerce-input-wrapper select {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #CFDBE8;
+    padding-left: 20px;
+    border-radius: 4px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 13px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+    color:#6F939A;
+}
+
+.finalizar-compra-page .checkout-order-review-title {
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+    padding-left: 45px;
+    border: 1px solid  #CFDBE8;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    font-family: Manrope;
+    font-weight: 800;
+    font-style: ExtraBold;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 140%;
+    letter-spacing: 2%;
+    text-transform: uppercase;
+    color: #103A51;
+    height: 78px;
+
+}
+
+.finalizar-compra-page .woocommerce-checkout-review-order, .finalizar-compra-page .wc-credit-card-form, .finalizar-compra-page .woocommerce-checkout-review-order-table {
+    
+}
+
+
+.finalizar-compra-page .woocommerce-checkout-review-order-table {
+}
+
+
+.finalizar-compra-page .wc-credit-card-form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.finalizar-compra-page .wc_payment_method {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    max-width: 450px;
+    gap: 10px;
+    align-items:flex-start;
+    max-width: 450px;
+    margin-bottom: 20px;
+}
+
+.finalizar-compra-page .wc_payment_method label {
+    display:flex;
+    align-items:center;
+    font-family: Manrope;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 160%;
+    letter-spacing: 0%;
+    color: #1C4067;
+
+} 
+
+.finalizar-compra-page .wc_payment_method label img {
+     display: none;
+} 
+
+.finalizar-compra-page .wc_payment_method label text {
+    display:flex;
+    align-items:center;
+} 
+
+.finalizar-compra-page .wc_payment_method .payment_method_loja5_woo_novo_erede_pix {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.finalizar-compra-page .payment-method-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.finalizar-compra-page .payment-method-item:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.finalizar-compra-page .payment-method-item .label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.finalizar-compra-page .wc_payment_method .payment_method_loja5_woo_novo_erede_pix p {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.finalizar-compra-page .wc_payment_method text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.finalizar-compra-page .wc_payment_method input {
+    width: 20px;
+    height: 20px;
+}
+
+.finalizar-compra-page .payment_box {
+    max-width: 450px;
+    width: 100%;
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+}
+
+.finalizar-compra-page .payment_box  fieldset input {
+    width: 100%;
+}
+
+.finalizar-compra-page .payment_box div {
+    max-width: 450px;
+    width: 100%;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+.finalizar-compra-page .wc-credit-card-form {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 399px;
+    width: 100%;
+    border:none;
+    align-items: flex-start;
+    white-space: normal;
+}
+
+.finalizar-compra-page .payment-fields {
+    height: 299px;
+    background: red;
+    display: flex;
+}
+
+.finalizar-compra-page .woocommerce-terms-and-conditions-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.finalizar-compra-page .payment-fields input {
+width: 100%;
+    height: 48px;
+    border: 1px solid #CFDBE8;
+    padding-left: 20px;
+    border-radius: 4px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 13px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+    color:#6F939A;
+}
+
+.finalizar-compra-page .wc-credit-card-form  p:first-child {
+    max-width: 100%;
+    width: 100%;
+    text-wrap: wrap;
+    display: flex !important;
+}
+
+.payment_box .payment_method_loja5_woo_itau_boleto {
+    grid-column: 1/3;
+    display: flex;
+}
+
+.finalizar-compra-page .wc-credit-card-form p input {
+    max-width: 100%;
+    border: 1px solid #CFDBE8 !important;
+    border-radius: 4px;
+    padding-left: 10px;
+    box-shadow: none !important;
+    height: 48px !important;
+    margin-top: 6px;
+
+}
+
+div#tela-novo-erede-credito select {
+     box-shadow: none !important;
+    height: 48px !important;
+    margin-top: 6px;
+     border: 1px solid #CFDBE8 !important;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 13px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #1F2937;
+}
+
+.finalizar-compra-page .wc-credit-card-form .campos_novo_erede_webservice:first-child {
+   
+}
+
+
+.campos_novo_erede_webservice label {
+    margin-bottom: 6px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: -1%;
+    color: #707D8C;
+}
+
+.finalizar-compra-page fieldset #tela-bandeiras-novo-erede span {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.finalizar-compra-page .tela-boleto-itau {
+    max-width: 100%;
+    width: 100%;
+}
+
+.finalizar-compra-page .checkout-form-title {
+    font-family: Manrope;
+    font-weight: 800;
+    font-style: ExtraBold;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 140%;
+    letter-spacing: 2%;
+    text-transform: uppercase;
+    color: #103A51;
+    margin-bottom: 24px;
+
+}
+
+.finalizar-compra-page #tela-boleto-itau .wc-credit-card-form p:first-child, #tela-novo-erede-pix p, #tela-novo-erede-credito > p {
+    background-color: #F8F2E6;
+    padding: 24px;
+    border-radius: 8px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 13px;
+    leading-trim: NONE;
+    line-height: 128%;
+    letter-spacing: 0%;
+    color: #707D8C;
+
+}
+
+.finalizar-compra-page .woocommerce-shipping-fields {
+}
+
+.finalizar-compra-page .form-row button {
+    background: #0264C0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 40px;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    height: 48px;
+    width: 100%;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    min-width: 120px;
+}
+
+.finalizar-compra-page .form-row button:hover {
+        background: #1C4067;
+
+}
+
+/* Form Grid Layout */
+.finalizar-compra-page .checkout-form-container .col2-set {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.finalizar-compra-page .checkout-form-container  {
+        display: flex;
+        flex-direction: column;
+}
+
+.finalizar-compra-page .woocommerce-form-coupon-toggle {
+    display: none;
+}
+
+.finalizar-compra-page .main-content, .finalizar-compra-page .checkout-section, .finalizar-compra-page .homepage-container {
+    display: flex;
+    max-width: 1203px;
+    width: 100%;
+}
+
+@media (max-width: 650px){
+    .finalizar-compra-page .main-content, .finalizar-compra-page .checkout-section, .finalizar-compra-page .homepage-container {
+        padding:0;
+    }
+
+    #main > section > div > form > pre > div > main > section > div > form {
+        padding:0;
+    }
+}
+
+.finalizar-compra-page .checkout-form-container .woocommerce-input-wrapper .select2-selection__rendered, .finalizar-compra-page .woocommerce-input-wrapper .select2-selection__rendered {
+   font-family: Inter;
+    font-weight: 400;
+    font-size: 13px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+    color: #6F939A;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 48px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 20px;
+}
+
+.finalizar-compra-page .checkout-billing {
+    max-width: 663px;
+}
+
+
+.finalizar-compra-page .woocommerce-billing-fields {
+    display: flex;
+    flex-direction: column;
+}
+
+.finalizar-compra-page .woocommerce-billing-fields__field-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+@media (max-width: 1025px){
+    .finalizar-compra-page .woocommerce-billing-fields__field-wrapper {
+            grid-template-columns: 1fr;
+max-width: 100%;
+            width: 100%;
+    }
+}
+
+@media (max-width: 450px){
+    .finalizar-compra-page .woocommerce-billing-fields__field-wrapper {
+            max-width: 360px;
+            width: 100%;
+
+    }
+}
+
+@media (max-width: 750px){
+    .finalizar-compra-page .woocommerce-billing-fields__field-wrapper {
+            grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+}
+
+.finalizar-compra-page .checkout-billing,
+.finalizar-compra-page .checkout-shipping {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width:400px){
+    .finalizar-compra-page .checkout-billing,
+.finalizar-compra-page .checkout-shipping {
+    display: flex;
+    flex-direction: column;
+    max-width: 380px;
+}
+}
+
+
+.finalizar-compra-page .checkout-shipping .woocommerce-shipping-fields {
+    display: flex;
+    flex-direction: column;
+}
+
+.finalizar-compra-page .checkout-shipping .ship-to-different-address {
+display: flex;
+    flex-direction: column;
+}
+
+.finalizar-compra-page .shipping_address {
+    display: flex;
+    flex-direction: column;
+}
+
+.finalizar-compra-page .checkout-shipping .woocommerce-additional-fields{
+    display: flex;
+    flex-direction: column;
+}
+
+.finalizar-compra-page .woocommerce-input-wrapper textarea {
+    border: 1px solid #CFDBDD;
+    padding: 10px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 13px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+    color:#707D8C99 ;
+    margin-top: 6;
+    width: 100%;
+    height: 80px;
+    border-radius: 4px;
+    resize: none;
+}
+
+
+
+.finalizar-compra-page .checkout-shipping .woocommerce-shipping-fields   .woocommerce-form__label {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-family: Manrope;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 160%;
+    letter-spacing: 0%;
+    color: #0F4B57;
+
+}
+
+.finalizar-compra-page .woocommerce-shipping-fields #ship-to-different-address, .finalizar-compra-page .woocommerce-column--2 {
+    display: flex;
+    flex-direction: column;
+    font-family: Manrope;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 160%;
+    letter-spacing: 0%;
+    color: #707D8C;
+}
+
+/* Order Review */
+.finalizar-compra-page .order-review-content {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.finalizar-compra-page .order-review-content .shop_table {
+    margin: 0;
+    width: 100%;
+    border-collapse: collapse;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.finalizar-compra-page .order-review-content .shop_table th,
+.finalizar-compra-page .order-review-content .shop_table td {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid #f3f4f6;
+
+}
+
+.finalizar-compra-page .order-review-content .shop_table th {
+    font-weight: 700;
+    color: #374151;
+    text-transform: uppercase;
+    font-size: 0.8125rem;
+    letter-spacing: 1px;
+}
+
+.finalizar-compra-page .order-review-content .order-total {
+    background: #0264C0;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.finalizar-compra-page .order-review-content .order-total th,
+.finalizar-compra-page .order-review-content .order-total td {
+    border-bottom: none;
+}
+
+/* Payment Methods */
+.finalizar-compra-page .payment-methods-content {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.finalizar-compra-page .payment-methods-content .payment_methods {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.finalizar-compra-page .payment-methods-content .payment_methods li {
+    margin-bottom: 1rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border-color 0.2s ease;
+}
+
+.finalizar-compra-page .payment-methods-content .payment_methods li:hover {
+    border-color: #3b82f6;
+}
+
+.finalizar-compra-page .payment-methods-content .payment_methods input[type="radio"] {
+    display: none;
+}
+
+.finalizar-compra-page .payment-methods-content .payment_methods label {
+    
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    background: #f9fafb;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+.finalizar-compra-page .payment-methods-content .payment_methods input[type="radio"]:checked + label {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.finalizar-compra-page .payment-methods-content .payment_methods p {
+    background: #dbeafe;
+    color: #1d4ed8;
+    margin-top: 16px;
+}
+
+.finalizar-compra-page .payment-methods-content .payment_box {
+    padding: 1.5rem;
+    background: white;
+    display: none;
+}
+
+.payment_method_loja5_woo_itau_boleto p, .payment_method_loja5_woo_novo_erede p, .payment_method_loja5_woo_novo_erede_pix p {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    margin-top: 10px;
+}
+
+.finalizar-compra-page .payment-methods-content .payment_methods input[type="radio"]:checked ~ .payment_box {
+    
+}
+
+/* Step Actions */
+.finalizar-compra-page .step-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.finalizar-compra-page .btn-next-step,
+.finalizar-compra-page .btn-prev-step,
+.finalizar-compra-page .btn-place-order {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    min-width: 200px;
+}
+
+.finalizar-compra-page .btn-next-step,
+.finalizar-compra-page .btn-place-order {
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    color: white;
+}
+
+.finalizar-compra-page .btn-next-step:hover,
+.finalizar-compra-page .btn-place-order:hover {
+    background: linear-gradient(135deg, #1d4ed8, #1e40af);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+}
+
+.finalizar-compra-page .btn-prev-step {
+    background: #f3f4f6;
+    color: #374151;
+    border: 2px solid #e5e7eb;
+}
+
+.finalizar-compra-page .btn-prev-step:hover {
+    background: #e5e7eb;
+    transform: translateY(-2px);
+}
+
+.finalizar-compra-page .btn-place-order:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.finalizar-compra-page .second-column-checkout {
+    display: flex;
+    flex-direction: column;
+}
+
+.finalizar-compra-page  .first-column-checkout {
+    display: flex;
+    flex-direction: column;
+}
+
+.place-order {
+}
+
+/* Loading States */
+.finalizar-compra-page .loading-spinner {
+    display: inline-block;
+    margin-right: 0.5rem;
+    animation: spin 1s linear infinite;
+}
+
+.finalizar-compra-page .checkout-loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    backdrop-filter: blur(4px);
+}
+
+.finalizar-compra-page .loading-content {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.finalizar-compra-page .loading-spinner-large {
+    font-size: 2rem;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+}
+
+.finalizar-compra-page .loading-content p {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #374151;
+    margin: 0;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Error Messages */
+.finalizar-compra-page .checkout-errors {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2000;
+    max-width: 90%;
+    width: 500px;
+}
+
+.finalizar-compra-page .checkout-errors .woocommerce-error {
+    background: #fee2e2;
+    border: 1px solid #fecaca;
+    color: #991b1b;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: slideDown 0.3s ease;
+}
+
+.finalizar-compra-page .checkout-errors .woocommerce-message {
+    background: #dcfce7;
+    border: 1px solid #bbf7d0;
+    color: #166534;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px) translateX(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0) translateX(-50%);
+        opacity: 1;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    /* Main checkout grid */
+    .finalizar-compra-page .checkout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0 20px;
+        margin-top: 30px;
+        padding-left: 0;
+    }
+    
+    .finalizar-compra-page .checkout-steps-indicator {
+        padding: 0 1rem;
+        margin: 1rem 0 2rem 0;
+    }
+    
+    .finalizar-compra-page .step-number {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .finalizar-compra-page .step-label {
+        font-size: 0.75rem;
+    }
+    
+    .finalizar-compra-page .step-connector {
+        margin: 0 0.5rem;
+        top: -20px;
+    }
+    
+    .finalizar-compra-page .checkout-step h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .finalizar-compra-page .customer-details-form,
+    .finalizar-compra-page .order-review-content,
+    .finalizar-compra-page .payment-methods-content {
+        padding: 1.5rem;
+    }
+
+    .finalizar-compra-page .checkout-form-container  {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .finalizar-compra-page .checkout-form-container .col2-set {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .finalizar-compra-page .login-form-fields {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+    
+    .finalizar-compra-page .customer-login-container {
+        margin-bottom: 1.5rem;
+    }
+    
+    .finalizar-compra-page .woocommerce-form-login {
+        padding: 1rem;
+    }
+    
+    .finalizar-compra-page .step-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .finalizar-compra-page .btn-next-step,
+    .finalizar-compra-page .btn-prev-step,
+    .finalizar-compra-page .btn-place-order {
+        width: 100%;
+        min-width: auto;
+    }
+    
+    .finalizar-compra-page .checkout-errors {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        transform: none;
+        width: auto;
+        max-width: none;
+    }
+    
+    /* Form inputs mobile improvements */
+    .finalizar-compra-page .form-row .woocommerce-input-wrapper input, 
+    .finalizar-compra-page .form-row .woocommerce-input-wrapper select {
+        font-size: 16px; /* Prevents zoom on iOS */
+        height: 50px;
+        padding-left: 16px;
+    }
+    
+    .finalizar-compra-page .woocommerce-input-wrapper textarea {
+        font-size: 16px; /* Prevents zoom on iOS */
+        padding: 12px;
+        height: 100px;
+    }
+    
+    /* Order review mobile */
+    .finalizar-compra-page .checkout-order-review-title,
+    .finalizar-compra-page .order-review-title {
+        max-width: none;
+        width: 100%;
+        padding: 16px;
+        font-size: 14px;
+    }
+    
+    .finalizar-compra-page .shop_table {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 13px;
+    }
+    
+    .finalizar-compra-page .shop_table thead th {
+        padding: 12px 16px;
+        font-size: 11px;
+    }
+    
+    .finalizar-compra-page .shop_table tbody td,
+    .finalizar-compra-page .shop_table tfoot th,
+    .finalizar-compra-page .shop_table tfoot td {
+        padding: 12px 16px;
+        font-size: 12px;
+    }
+    
+    /* Payment methods mobile */
+    .finalizar-compra-page .payment-methods-wrapper,
+    .finalizar-compra-page .woocommerce-checkout-payment {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .finalizar-compra-page .payment-method-header {
+        padding: 14px 16px;
+    }
+    
+    .finalizar-compra-page .payment-method-title {
+        font-size: 13px;
+    }
+    
+    /* Brazil login form mobile */
+    .finalizar-compra-page .brazil-login-inputs-row {
+        grid-template-columns: 1fr !important;
+        gap: 16px;
+    }
+    
+    .finalizar-compra-page .brazil-login-footer-row {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .finalizar-compra-page .brazil-login-input {
+        font-size: 16px; /* Prevents zoom on iOS */
+        height: 50px;
+        padding: 0 16px;
+    }
+    
+    /* Credit card form mobile */
+    .finalizar-compra-page .wc-credit-card-form {
+        max-width: none;
+    }
+    
+    .finalizar-compra-page .payment-fields input {
+        font-size: 16px; /* Prevents zoom on iOS */
+        height: 50px;
+        padding-left: 16px;
+    }
+    
+    .finalizar-compra-page .wc_payment_method {
+        max-width: none;
+    }
+    
+    .finalizar-compra-page .payment_box {
+        max-width: none;
+    }
+    
+    /* Button improvements */
+    .finalizar-compra-page .form-row button {
+        font-size: 16px; /* Better touch target */
+        height: 50px;
+        padding: 12px 20px;
+    }
+}
+
+@media (max-width: 500px){
+     .finalizar-compra-page .checkout-form-container  {
+        display: flex;
+        flex-direction: column;
+        max-width: 360px;
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+.finalizar-compra-page .woocommerce {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.finalizar-compra-page .woocommerce-error {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Brazil Checkout Login Form Styling */
+.finalizar-compra-page .woocommerce-form-login-toggle {
+    display: flex;
+    background: #F1F5F999;
+    flex-direction: row;
+    padding: 24px;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 8px;
+    border-bottom: 1px solid  #CFDBE8;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.finalizar-compra-page .woocommerce-form-login-toggle .woocommerce-info {
+    height: 100%;
+}
+
+@media (max-width: 650px){
+    .finalizar-compra-page .woocommerce-form-login-toggle .woocommerce-info {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        white-space: normal;
+        margin-left: 10px;
+        gap: 6px;
+    }
+
+    #main > section > div > form > pre > div > div.woocommerce-form-login-toggle > div > div > a {
+        margin-left: 0;
+    }
+
+     .woocommerce-info-label a {
+        margin-left: 0;
+    }
+}
+
+.woocommerce-info-label {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.woocommerce-info-label a {
+    margin-left: 10px;
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #0264C0;
+    text-decoration: none;
+}
+
+.finalizar-compra-page .login-toggle-first {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.finalizar-compra-page .login-toggle-first picture {
+    display: flex;
+}
+
+.finalizar-compra-page .login-toggle-button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.finalizar-compra-page .icon-toggle-button {
+    transition: transform 0.3s ease;
+}
+
+.finalizar-compra-page .woocommerce-error {
+    list-style: none;
+}
+
+.finalizar-compra-page .woocommerce-error li {
+    display: flex;
+    flex-direction: row;
+}
+
+.finalizar-compra-page .woocommerce-error li a {
+    display: flex;
+    flex-direction: row;
+}
+
+.finalizar-compra-page .brazil-checkout-login-container {
+    background: #F1F5F999;
+    padding: 24px;
+    margin-bottom: 20px;
+    max-width: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.finalizar-compra-page .brazil-login-description {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    color: #707D8C;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    display: flex;
+
+}
+
+.finalizar-compra-page .brazil-login-inputs-row {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 0.4fr) 0.3fr;
+    align-items: flex-end;
+    max-width: 700px;
+}
+
+.finalizar-compra-page .brazil-login-field-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+.finalizar-compra-page .brazil-login-field-label {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    color: #707D8C;
+    margin-bottom: 6px;
+}
+
+.finalizar-compra-page .brazil-login-input {
+    width: 100%;
+    height: 48px;
+    border-radius: 4px;
+    padding: 0 20px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 13px;
+    color: #6F939A;
+    background: white;
+    transition: border-color 0.2s ease;
+    box-sizing: border-box;
+    border: 1px solid #CFDBDD80;
+}
+
+.finalizar-compra-page .brazil-login-input:focus {
+    outline: none;
+    border-color: #4285F4;
+    box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.2);
+}
+
+.finalizar-compra-page .brazil-login-required {
+    color: #e74c3c;
+}
+
+.finalizar-compra-page .brazil-login-footer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.finalizar-compra-page .brazil-login-footer-row {
+    margin-bottom: 20px;
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: repeat(2, 0.4fr) 0.3fr;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.finalizar-compra-page .brazil-login-submit-wrapper {
+    margin-bottom: 0;
+    margin-top: 0;
+    display: flex;
+    width: 100%;
+    height: 48px;
+}
+
+.finalizar-compra-page .brazil-login-checkbox-label {
+    display: flex;
+    align-items: center;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: -1%;
+    color: #707D8C;
+    margin: 0;
+    cursor: pointer;
+}
+
+.finalizar-compra-page .brazil-login-checkbox {
+    width: 16px !important;
+    height: 16px !important;
+    margin-right: 8px;
+    accent-color: #4285F4;
+}
+
+.finalizar-compra-page .brazil-login-remember-wrapper {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.finalizar-compra-page .brazil-login-forgot-wrapper {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.finalizar-compra-page .brazil-login-forgot-link {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    color: #4285F4;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.finalizar-compra-page .brazil-login-forgot-link:hover {
+    color: #3367d6;
+    text-decoration: underline;
+}
+
+.finalizar-compra-page .brazil-login-submit-btn {
+    background: #4285F4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 40px;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    height: 48px;
+    width: 100%;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    min-width: 120px;
+}
+
+.finalizar-compra-page .brazil-login-submit-btn:hover {
+    background: #3367d6;
+    transform: translateY(-1px);
+}
+
+.finalizar-compra-page .brazil-login-submit-btn:active {
+    transform: translateY(0);
+}
+
+.finalizar-compra-page .brazil-login-errors {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.finalizar-compra-page .brazil-login-errors .woocommerce-error,
+.finalizar-compra-page .brazil-login-errors .woocommerce-message {
+    padding: 12px 16px;
+    border-radius: 4px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.finalizar-compra-page .brazil-login-errors .woocommerce-error {
+    background: #fee2e2;
+    border: 1px solid #fecaca;
+    color: #991b1b;
+}
+
+.finalizar-compra-page .brazil-login-errors .woocommerce-message {
+    background: #dcfce7;
+    border: 1px solid #bbf7d0;
+    color: #166534;
+}
+
+@media (max-width: 750px){
+      .finalizar-compra-page .shop_table {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        font-size: 12px;
+    }
+}
+
+/* Mobile 480px - Extra Small Screens */
+@media (max-width: 480px) {
+    /* Main checkout improvements */
+    .finalizar-compra-page .checkout {
+        gap: 20px;
+        padding: 0 15px;
+        margin-top: 20px;
+    }
+    
+    /* Form improvements */
+    .finalizar-compra-page .form-row {
+        margin-bottom: 20px;
+    }
+    
+    .finalizar-compra-page .form-row label {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+    
+    .finalizar-compra-page .form-row .woocommerce-input-wrapper input, 
+    .finalizar-compra-page .form-row .woocommerce-input-wrapper select {
+        height: 48px;
+        font-size: 16px; /* Prevents zoom on iOS */
+        padding-left: 14px;
+    }
+    
+    .finalizar-compra-page .woocommerce-input-wrapper textarea {
+        height: 80px;
+        padding: 10px;
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+    
+    /* Order review improvements */
+    .finalizar-compra-page .checkout-order-review-title,
+    .finalizar-compra-page .order-review-title {
+        padding: 12px;
+        font-size: 13px;
+    }
+    
+    .finalizar-compra-page .shop_table {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 12px;
+    }
+    
+    .finalizar-compra-page .shop_table thead th {
+        padding: 10px 12px;
+        font-size: 10px;
+    }
+    
+    .finalizar-compra-page .shop_table tbody td,
+    .finalizar-compra-page .shop_table tfoot th,
+    .finalizar-compra-page .shop_table tfoot td {
+        padding: 10px 12px;
+        font-size: 11px;
+    }
+    
+    /* Payment methods improvements */
+    .finalizar-compra-page .payment-methods-wrapper,
+    .finalizar-compra-page .woocommerce-checkout-payment {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 25px;
+    }
+    
+    .finalizar-compra-page .payment-method-header {
+        padding: 12px 14px;
+    }
+    
+    .finalizar-compra-page .payment-method-title {
+        font-size: 12px;
+    }
+    
+    .finalizar-compra-page .payment-method-radio {
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
+    }
+    
+    /* Brazil login form improvements */
+    .finalizar-compra-page .brazil-checkout-login-container {
+        padding: 18px;
+    }
+    
+    .finalizar-compra-page .brazil-login-inputs-row {
+        grid-template-columns: 1fr !important;
+        gap: 12px;
+    }
+    
+    .finalizar-compra-page .brazil-login-footer-row {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .finalizar-compra-page .brazil-login-input {
+        height: 48px;
+        padding: 0 14px;
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+    
+    .finalizar-compra-page .brazil-login-field-label {
+        font-size: 13px;
+    }
+    
+    .finalizar-compra-page .brazil-login-submit-btn {
+        height: 48px;
+        font-size: 16px; /* Better touch target */
+    }
+    
+    /* Button improvements */
+    .finalizar-compra-page .form-row button {
+        height: 48px;
+        font-size: 16px; /* Better touch target */
+        padding: 14px 18px;
+    }
+    
+    .finalizar-compra-page .btn-next-step,
+    .finalizar-compra-page .btn-prev-step,
+    .finalizar-compra-page .btn-place-order {
+        padding: 14px 20px;
+        font-size: 16px;
+        min-width: auto;
+    }
+    
+    /* Credit card form improvements */
+    .finalizar-compra-page .payment-fields input {
+        height: 48px;
+        padding-left: 14px;
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+    
+    .finalizar-compra-page .wc-credit-card-form p:first-child {
+        max-width: none;
+    }
+    
+    /* Place order section */
+    .place-order {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    /* Error messages */
+    .finalizar-compra-page .checkout-errors {
+        top: 5px;
+        left: 5px;
+        right: 5px;
+    }
+    
+    .finalizar-compra-page .brazil-login-errors .woocommerce-error,
+    .finalizar-compra-page .brazil-login-errors .woocommerce-message {
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+}
+
+/* Also target the original form structure in case it exists elsewhere */
+.finalizar-compra-page .woocommerce-form-login {
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+/* Hide original form */
+.finalizar-compra-page .woocommerce-checkout[style*="display: none"] {
+    display: none !important;
+}
+
+/* Order Review Table Styling */
+.finalizar-compra-page .checkout-order-review {
+    margin-bottom: 24px;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.finalizar-compra-page .order-review-title {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #1F2937;
+    margin: 0;
+    padding: 20px 24px;
+    background: #F9FAFB;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.finalizar-compra-page .shop_table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: white;
+    border: none;
+    margin: 0;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+@media (max-width: 750px){
+    .finalizar-compra-page .shop_table {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.finalizar-compra-page .shop_table thead th {
+    padding: 24px 24px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    text-align: left;
+    color: #6B7280;
+    border-bottom: 1px solid #E5E7EB;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.finalizar-compra-page .shop_table thead .product-total {
+    text-align: right;
+    width: 120px;
+    white-space: nowrap;
+}
+
+.finalizar-compra-page .shop_table thead .product-name {
+    width: auto;
+}
+
+.finalizar-compra-page .shop_table tbody .product-name {
+    padding-bottom: 20px;
+    font-family: Manrope;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 160%;
+    letter-spacing: 0%;
+    color: #1C4067;
+    border-bottom: 1px solid #F3F4F6;
+    vertical-align: middle;
+    text-align: left;
+    display: flex;
+}
+
+.finalizar-compra-page .shop_table tbody .product-total {
+    font-family: Manrope;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 140%;
+    letter-spacing: 2%;
+    text-transform: uppercase;
+    color: #1C4067;
+    white-space: nowrap;
+}
+
+.finalizar-compra-page .shop_table tbody .product-quantity {
+    color: #6B7280;
+    font-weight: 400;
+    margin-left: 4px;
+}
+
+.finalizar-compra-page .shop_table tfoot th {
+    padding: 16px 24px;
+    font-family: Manrope;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 160%;
+    letter-spacing: 0%;
+    color: #1C4067;
+    text-align: left;
+    border-bottom: 1px solid #F3F4F6;
+    background: white;
+}
+
+.finalizar-compra-page .shop_table tfoot td {
+    padding: 16px 24px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 14px;
+    color: #374151;
+    text-align: right;
+    white-space: nowrap;
+    border-bottom: 1px solid #F3F4F6;
+    background: white;
+}
+
+.finalizar-compra-page .shop_table tfoot .order-total th,
+.finalizar-compra-page .shop_table tfoot .order-total td {
+   font-family: Manrope;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 140%;
+    letter-spacing: 2%;
+    text-transform: uppercase;
+    color: #0F4B57;
+    border-bottom: none;
+    padding-bottom: 10px;
+}
+
+/* Hide shipping and other unnecessary rows in checkout */
+.finalizar-compra-page .shop_table .shipping,
+.finalizar-compra-page .shop_table .cart-discount,
+.finalizar-compra-page .shop_table .fee,
+.finalizar-compra-page .shop_table .tax-rate,
+.finalizar-compra-page .shop_table .tax-total {
+    display: none;
+}
+
+/* Payment Methods Styling */
+.finalizar-compra-page .payment-methods-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 35px;
+}
+
+.finalizar-compra-page .payment-method-item {
+    border-radius: 0;
+    overflow: hidden;
+}
+
+.finalizar-compra-page .payment-method-item:first-child {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.finalizar-compra-page .payment-method-item:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.finalizar-compra-page .payment-method-item + .payment-method-item {
+    border-top: none;
+}
+
+.finalizar-compra-page .payment-method-header {
+    display: flex;
+    align-items: center;
+    padding: 16px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 100%;
+}
+
+.finalizar-compra-page .woocommerce-checkout-review-order{
+    border: 1px solid #CFDBE8;
+    display: flex;
+    flex-direction: column;
+}
+
+.finalizar-compra-page .payment-method-header:hover {
+    
+}
+
+.finalizar-compra-page .woocommerce-checkout-payment {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    padding: 45px;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.finalizar-compra-page .payment_box .form-row-wide {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+}
+
+.finalizar-compra-page  #billing_state_field .woocommerce-input-wrapper  {
+    height: 48px;
+}
+
+.finalizar-compra-page  #billing_state_field .woocommerce-input-wrapper .select2-container--default .select2-selection--single {
+    height: 48px;
+    border: 1px solid  #CFDBE8;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.finalizar-compra-page .payment-method-radio {
+    width: 18px;
+    height: 18px;
+    margin-right: 12px;
+    cursor: pointer;
+    accent-color: #4285F4;
+}
+
+.finalizar-compra-page .payment-method-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+    margin: 0;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 14px;
+    color: #374151;
+}
+
+.finalizar-compra-page .payment-method-title {
+    display: flex;
+    flex-direction: row;
+    font-family: Manrope;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 160%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #1C4067;
+}
+
+.finalizar-compra-page .payment-method-icon {
+    margin-left: 12px;
+}
+
+.finalizar-compra-page .payment-method-icon img {
+    max-height: 24px;
+    width: auto;
+}
+
+.finalizar-compra-page .payment-method-item .payment-method-description {
+       
+}
+
+.finalizar-compra-page .woocommerce-account-fields {
+    display: flex;
+    flex-direction: column;
+}
+
+.finalizar-compra-page .woocommerce-account-fields .create-account label {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.finalizar-compra-page .payment-description-text {
+    font-family: Inter;
+    font-size: 13px;
+    color: #6b7280;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: row;
+}
+
+.finalizar-compra-page .payment-description-text p {
+    margin: 0 0 8px 0;
+}
+
+.finalizar-compra-page .payment-description-text p:last-child {
+    margin-bottom: 0;
+}
+
+.finalizar-compra-page .payment-fields {
+    margin-top: 12px;
+}
+
+/* Selected payment method styling */
+.finalizar-compra-page .payment-method-item:has(input[type="radio"]:checked) .payment-method-header {
+    
+}
+
+.finalizar-compra-page .payment-method-item:has(input[type="radio"]:checked) .payment-method-label {
+    color: #1d4ed8;
+    font-weight: 600;
+}
+
+/* Fallback for browsers that don't support :has() */
+.finalizar-compra-page .payment-method-item.selected .payment-method-header {
+    background-color: #dbeafe;
+}
+
+.finalizar-compra-page .payment-method-item.selected .payment-method-label {
+    color: #1d4ed8;
+    font-weight: 600;
+}
+
+/* No payment methods message */
+.finalizar-compra-page .no-payment-methods {
+    padding: 20px;
+    text-align: center;
+    background-color: #f3f4f6;
+    border-radius: 8px;
+}
+
+/* Responsive design for payment methods */
+@media (max-width: 768px) {
+    .finalizar-compra-page .payment-method-header {
+        padding: 12px 16px;
+    }
+    
+    .finalizar-compra-page .payment-method-description {
+        
+    }
+    
+    .finalizar-compra-page .payment-method-radio {
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
+    }
+    
+    .finalizar-compra-page .payment-method-label {
+        font-size: 13px;
+    }
+}
+
+.finalizar-compra-page .form-row-first, .finalizar-compra-page .form-row-last {
+    
+}
+
+.finalizar-compra-page .woocommerce-NoticeGroup-checkout {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+/* Checkout Product Items with Images */
+.checkout-product-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: flex-start;
+    min-width: 0;
+}
+
+.checkout-product-image {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.checkout-product-image img {
+   width: 50px;
+    height: 50px;
+    object-fit: scale-down;
+}
+
+.checkout-product-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+}
+
+.checkout-product-name {
+    font-family: Manrope;
+    font-weight: 600;
+    font-size: 14px;
+    color: #1C4067;
+    line-height: 1.3;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.checkout-product-quantity {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    color: #707D8C;
+}
+
+/* Review Order Table Styles */
+.woocommerce-checkout-review-order-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.woocommerce-checkout-review-order-table thead th {
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 14px;
+    color: #1C4067;
+    text-transform: uppercase;
+    padding: 16px 12px;
+    border-bottom: 2px solid #E2E8F0;
+    background-color: #F8FAFC;
+}
+
+.woocommerce-checkout-review-order-table tbody td {
+    padding: 16px 12px;
+    border-bottom: 1px solid #E2E8F0;
+    vertical-align: top;
+}
+
+.woocommerce-checkout-review-order-table .product-total {
+    font-family: Manrope;
+    font-weight: 600;
+    font-size: 14px;
+    color: #1C4067;
+    text-align: right;
+}
+
+.woocommerce-checkout-review-order-table tfoot th,
+.woocommerce-checkout-review-order-table tfoot td {
+    font-family: Manrope;
+    font-weight: 600;
+    font-size: 14px;
+    color: #1C4067;
+    padding: 12px;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.woocommerce-checkout-review-order-table .order-total th,
+.woocommerce-checkout-review-order-table .order-total td {
+    font-weight: 700;
+    font-size: 16px;
+    border-bottom: none;
+    border-top: 2px solid #1C4067;
+    background-color: #F8FAFC;
+}
+
+/* Responsive styles for checkout product items */
+@media (max-width: 768px) {
+    .checkout-product-item {
+        gap: 8px;
+    }
+
+    .checkout-product-image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .checkout-product-name {
+        font-size: 13px;
+    }
+
+    .checkout-product-quantity {
+        font-size: 11px;
+    }
+
+    .woocommerce-checkout-review-order-table thead th,
+    .woocommerce-checkout-review-order-table tbody td,
+    .woocommerce-checkout-review-order-table tfoot th,
+    .woocommerce-checkout-review-order-table tfoot td {
+        padding: 12px 8px;
+    }
+}
+
+/* Cart Shipping Calculator Styles for Checkout */
+.finalizar-compra-page .cart-shipping-calculator {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.finalizar-compra-page .cart-shipping-title {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1C4067;
+    margin: 0 0 1rem 0;
+    text-align: left;
+}
+
+.finalizar-compra-page .cart-cep-input-group {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.finalizar-compra-page .cart-cep-input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+.finalizar-compra-page .cart-cep-input:focus {
+    outline: none;
+    border-color: #007cba;
+    box-shadow: 0 0 0 2px rgba(0, 124, 186, 0.1);
+}
+
+.finalizar-compra-page .cart-cep-button {
+    padding: 0.75rem 1rem;
+    background-color: #0264C0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.finalizar-compra-page .cart-cep-button:hover {
+    background-color: #1C4067;
+    transform: translateY(-1px);
+}
+
+.finalizar-compra-page .cart-cep-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.finalizar-compra-page .cart-cep-results {
+    border-top: 1px solid #e9ecef;
+    padding-top: 1rem;
+}
+
+.finalizar-compra-page .cart-cep-results h4 {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 0.75rem 0;
+}
+
+.finalizar-compra-page .cart-shipping-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    background-color: white;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.finalizar-compra-page .cart-shipping-option:last-child {
+    margin-bottom: 0;
+}
+
+.finalizar-compra-page .cart-shipping-name {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.finalizar-compra-page .cart-shipping-price {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #007cba;
+}
+
+.finalizar-compra-page .cart-shipping-error {
+    color: #dc3545;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    padding: 0.75rem;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+}
+
+/* Responsive styles for checkout shipping calculator */
+@media (max-width: 768px) {
+    .finalizar-compra-page .cart-shipping-calculator {
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+
+    .finalizar-compra-page .cart-cep-input-group {
+        flex-direction: column;
+    }
+
+    .finalizar-compra-page .cart-cep-button {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .finalizar-compra-page .cart-shipping-option {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+}

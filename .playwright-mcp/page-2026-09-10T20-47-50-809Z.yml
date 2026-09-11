@@ -1,0 +1,167 @@
+- generic [active] [ref=f3e1]:
+  - banner [ref=f3e2]:
+    - generic [ref=f3e7]:
+      - generic [ref=f3e8]:
+        - img "FRETE GRÁTIS PARA TODO O BRASIL" [ref=f3e9]
+        - text: FRETE GRÁTIS PARA TODO O BRASIL
+      - generic [ref=f3e10]:
+        - img "ENVIO NO MESMO DIA SÃO PAULO" [ref=f3e11]
+        - text: ENVIO NO MESMO DIA SÃO PAULO
+      - generic [ref=f3e12]:
+        - img "DESCONTO DE 5% NO PIX" [ref=f3e13]
+        - text: DESCONTO DE 5% NO PIX
+    - generic [ref=f3e16]:
+      - button "Toggle mobile menu" [ref=f3e17] [cursor=pointer]
+      - button [ref=f3e21]:
+        - img "Buscar" [ref=f3e22]
+      - link [ref=f3e24] [cursor=pointer]:
+        - /url: http://brazil-home.local
+        - img "Brazil Home Living" [ref=f3e25]
+      - generic [ref=f3e26]:
+        - link [ref=f3e28] [cursor=pointer]:
+          - /url: http://brazil-home.local/minha-conta/
+          - img "Usuário" [ref=f3e29]
+        - link [ref=f3e31] [cursor=pointer]:
+          - /url: http://brazil-home.local/carrinho/
+          - img "Carrinho" [ref=f3e32]
+    - navigation [ref=f3e33]:
+      - generic [ref=f3e34]:
+        - link [ref=f3e36] [cursor=pointer]:
+          - /url: http://brazil-home.local
+          - img "Brazil Home Living" [ref=f3e37]
+        - list [ref=f3e38]:
+          - listitem [ref=f3e39]:
+            - link "Todos os produtos" [ref=f3e40] [cursor=pointer]:
+              - /url: http://brazil-home.local/todos-os-produtos/
+          - listitem [ref=f3e41]:
+            - link "CARRINHOS DE CARGA" [ref=f3e42] [cursor=pointer]:
+              - /url: http://brazil-home.local/categoria-produto/carrinhos-de-carga/
+          - listitem [ref=f3e43]:
+            - link "DEPÓSITOS DE AÇO" [ref=f3e44] [cursor=pointer]:
+              - /url: http://brazil-home.local/categoria-produto/depositos-de-aco/
+          - listitem [ref=f3e45]:
+            - link "GAZEBO E PERGOLADO" [ref=f3e46] [cursor=pointer]:
+              - /url: http://brazil-home.local/categoria-produto/gazebos/
+  - main [ref=f3e47]:
+    - generic [ref=f3e50]:
+      - heading "Blog" [level=1] [ref=f3e51]
+      - heading "FIQUE POR DENTRO DO BLOG" [level=2] [ref=f3e52]
+    - generic [ref=f3e53]:
+      - generic:
+        - button [ref=f3e54] [cursor=pointer]:
+          - img "Previous" [ref=f3e55]
+        - button [ref=f3e56] [cursor=pointer]:
+          - img "Next" [ref=f3e57]
+      - generic [ref=f3e59]:
+        - generic [ref=f3e61]:
+          - link [aria-hidden] [ref=f3e62] [cursor=pointer]:
+            - /url: http://brazil-home.local/seguranca-em-primeiro-lugar-a-necessidade-do-uso-de-epis-na-montagem-de-depositos-de-aco-e-gazebos/
+            - article [ref=f3e63]:
+              - generic [ref=f3e67]:
+                - generic [ref=f3e68]: DESTAQUE
+                - heading [level=3] [ref=f3e69]: "SEGURANçA EM PRIMEIRO LUGAR: A NECESSIDADE DO USO DE EPIS"
+          - tabpanel [ref=f3e71] [cursor=pointer]:
+            - article [ref=f3e72]:
+              - img "Dicas para armazenar bicicletas e acessórios de forma organizada" [ref=f3e74]
+              - generic [ref=f3e75]:
+                - generic [ref=f3e76]:
+                  - generic [ref=f3e77]: DESTAQUE
+                  - heading "DICAS PARA ARMAZENAR BICICLETAS E ACESSóRIOS DE FORMA ORGANIZADA" [level=3] [ref=f3e78]
+                - img "Ler mais" [ref=f3e79]
+          - tabpanel [aria-hidden] [ref=f3e80] [cursor=pointer]:
+            - article [ref=f3e81]:
+              - generic [ref=f3e85]:
+                - generic [ref=f3e86]: DESTAQUE
+                - heading [level=3] [ref=f3e87]: "SEGURANçA EM PRIMEIRO LUGAR: A NECESSIDADE DO USO DE EPIS"
+          - link [aria-hidden] [ref=f3e89] [cursor=pointer]:
+            - /url: http://brazil-home.local/dicas-para-armazenar-bicicletas-e-acessorios-de-forma-organizada/
+            - article [ref=f3e90]:
+              - generic [ref=f3e94]:
+                - generic [ref=f3e95]: DESTAQUE
+                - heading [level=3] [ref=f3e96]: DICAS PARA ARMAZENAR BICICLETAS E ACESSóRIOS DE FORMA ORGANIZADA
+          - link [aria-hidden] [ref=f3e98] [cursor=pointer]:
+            - /url: http://brazil-home.local/seguranca-em-primeiro-lugar-a-necessidade-do-uso-de-epis-na-montagem-de-depositos-de-aco-e-gazebos/
+            - article [ref=f3e99]:
+              - generic [ref=f3e103]:
+                - generic [ref=f3e104]: DESTAQUE
+                - heading [level=3] [ref=f3e105]: "SEGURANçA EM PRIMEIRO LUGAR: A NECESSIDADE DO USO DE EPIS"
+        - tablist [ref=f3e107]:
+          - tab "1 of 2" [selected] [ref=f3e108] [cursor=pointer]: "1"
+          - tab "2 of 2" [ref=f3e109] [cursor=pointer]: "2"
+    - generic [ref=f3e111]:
+      - heading "ÚLTIMAS POSTAGENS" [level=2] [ref=f3e113]
+      - generic [ref=f3e114]:
+        - link [ref=f3e115] [cursor=pointer]:
+          - /url: http://brazil-home.local/ferramentas-essenciais-para-montagem-do-abrigo-de-jardim/
+          - article [ref=f3e116]:
+            - img "Ferramentas Essenciais para Montagem do Abrigo de Jardim" [ref=f3e118]
+            - generic [ref=f3e119]:
+              - generic [ref=f3e120]:
+                - generic [ref=f3e121]: CATEGORIA
+                - heading "FERRAMENTAS ESSENCIAIS PARA MONTAGEM DO ABRIGO DE JARDIM" [level=3] [ref=f3e122]
+              - img "Ler mais" [ref=f3e123]
+        - link [ref=f3e124] [cursor=pointer]:
+          - /url: http://brazil-home.local/teste/
+          - article [ref=f3e125]:
+            - img "Montagem do Depósito de Aço sem complicações" [ref=f3e127]
+            - generic [ref=f3e128]:
+              - generic [ref=f3e129]:
+                - generic [ref=f3e130]: CATEGORIA
+                - heading "MONTAGEM DO DEPóSITO DE AçO SEM COMPLICAçõES" [level=3] [ref=f3e131]
+              - img "Ler mais" [ref=f3e132]
+  - contentinfo [ref=f3e133]:
+    - generic [ref=f3e136]:
+      - generic [ref=f3e137]:
+        - paragraph [ref=f3e138]:
+          - link "(11) 99480-4974" [ref=f3e139] [cursor=pointer]:
+            - /url: tel:11994804974
+        - paragraph [ref=f3e140]:
+          - link "contato@brazilhome.com.br" [ref=f3e141] [cursor=pointer]:
+            - /url: mailto:contato@brazilhome.com.br
+        - paragraph [ref=f3e142]: 08:00 às 19:00 - Segunda-feira a Sexta-feira
+      - generic [ref=f3e143]:
+        - img "Brazil Home Living" [ref=f3e145]
+        - generic [ref=f3e146]:
+          - link [ref=f3e147] [cursor=pointer]:
+            - /url: https://www.instagram.com/brazilhomeliving/
+            - img "Instagram" [ref=f3e148]
+          - link [ref=f3e149] [cursor=pointer]:
+            - /url: https://www.youtube.com
+            - img "YouTube" [ref=f3e150]
+          - link [ref=f3e151] [cursor=pointer]:
+            - /url: https://www.tiktok.com/@brazilhomeliving
+            - img "TikTok" [ref=f3e152]
+      - generic [ref=f3e153]:
+        - img "Visa" [ref=f3e154]
+        - img "Mastercard" [ref=f3e155]
+        - img "PayPal" [ref=f3e156]
+        - img "Apple Pay" [ref=f3e157]
+        - img "Google Pay" [ref=f3e158]
+        - img "Affirm" [ref=f3e159]
+        - img "Google Pay" [ref=f3e160]
+        - img "Affirm" [ref=f3e161]
+    - generic [ref=f3e163]:
+      - navigation [ref=f3e164]:
+        - list [ref=f3e165]:
+          - listitem [ref=f3e166]:
+            - link "Home" [ref=f3e167] [cursor=pointer]:
+              - /url: http://brazil-home.local/
+          - listitem [ref=f3e168]:
+            - link "Quem Somos" [ref=f3e169] [cursor=pointer]:
+              - /url: http://brazil-home.local/quem-somos/
+          - listitem [ref=f3e170]:
+            - link "Todos os produtos" [ref=f3e171] [cursor=pointer]:
+              - /url: http://brazil-home.local/todos-os-produtos/
+          - listitem [ref=f3e172]:
+            - link "Fale conosco" [ref=f3e173] [cursor=pointer]:
+              - /url: http://brazil-home.local/fale-conosco/
+          - listitem [ref=f3e174]:
+            - link "Blog" [ref=f3e175] [cursor=pointer]:
+              - /url: http://brazil-home.local/blog/
+      - generic [ref=f3e176]:
+        - paragraph [ref=f3e177]: © 2025 - Todos os direitos reservados
+        - link "Política de Privacidade" [ref=f3e178] [cursor=pointer]:
+          - /url: /politica-de-privacidade
+  - status [ref=f3e179]
+  - link [ref=f3e180] [cursor=pointer]:
+    - /url: https://tintim.link/whatsapp/a88f3353-b859-484d-b959-ec97963727c3/0bab8ae7-d9cd-4a28-8e5a-dc2b690d0d90
