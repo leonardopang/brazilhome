@@ -135,7 +135,7 @@
   leading-trim: NONE;
   line-height: 140%;
   letter-spacing: 0%;
-  color: #707d8c;
+  color: #5b6775;
   display: flex;
   justify-content: center;
 }
@@ -317,5 +317,46 @@
   .featured-product-card .product-price-current,
   .product-card .product-price-current {
     font-size: 16px;
+  }
+}
+
+.detalhes-products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  width: 100%;
+}
+
+/* Responsive styles for detalhes products (mirrors .featured-products-grid) */
+@media (max-width: 1200px) {
+  .detalhes-products-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .detalhes-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .detalhes-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .detalhes-products-section {
+    padding: 40px 0;
+  }
+
+  .detalhes-products-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
   }
 }

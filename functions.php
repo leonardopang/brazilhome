@@ -118,6 +118,8 @@ function brazil_home_enqueue_scripts()
   }
 
   // Load scripts
+  wp_add_inline_script('jquery', 'window.$ = window.$ || window.jQuery;');
+
   wp_enqueue_script('brazil-home-main', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), '', true);
   wp_enqueue_script('brazil-home-header-scroll', get_template_directory_uri() . '/assets/js/header-scroll.js', array('jquery'), '', true);
 
@@ -152,7 +154,7 @@ function brazil_home_enqueue_scripts()
     wp_enqueue_script('slick-js', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array('jquery'), '', true);
 
     wp_enqueue_script('brazil-home-homepage', get_template_directory_uri() . '/assets/js/homepage.js', array('jquery', 'slick-js'), '', true);
-    wp_enqueue_script('brazil-home-hero-carousel', get_template_directory_uri() . '/assets/js/hero-carousel.js', array('jquery'), '', true);
+    wp_enqueue_script('brazil-home-hero-carousel', get_template_directory_uri() . '/assets/js/hero-carousel.js', array('jquery', 'slick-js'), '', true);
     wp_enqueue_script('brazil-home-hero-carousel-mobile', get_template_directory_uri() . '/assets/js/hero-carousel-mobile.js', array(), '', true);
   }
 
@@ -181,7 +183,7 @@ function brazil_home_enqueue_scripts()
     global $post;
     wp_localize_script('brazil-home-product-detailsJS', 'brazil_product_tracker', array(
       'ajax_url' => admin_url('admin-ajax.php'),
-      'nonce' => wp_create_nonce('track_product_visit')
+      'product_id' => get_queried_object_id()
     ));
   }
 
@@ -882,51 +884,6 @@ function brazil_home_shipping_calculator_handler()
     'cart_total' => WC()->cart->get_cart_total(),
     'shipping_total' => WC()->cart->get_shipping_total()
   ));
-}
-
-// Track visited products functionality
-function brazil_home_track_visited_product($product_id)
-{
-  if (!$product_id)
-    return;
-
-  $visited_products = isset($_COOKIE['visited_products']) ? json_decode(stripslashes($_COOKIE['visited_products']), true) : array();
-
-  if (!is_array($visited_products)) {
-    $visited_products = array();
-  }
-
-  // Add product ID if not already in list
-  if (!in_array($product_id, $visited_products)) {
-    array_unshift($visited_products, $product_id); // Add to beginning
-    // Keep only last 10 visited products
-    $visited_products = array_slice($visited_products, 0, 10);
-
-    // Set cookie for 30 days
-    setcookie('visited_products', json_encode($visited_products), time() + (30 * 24 * 60 * 60), '/');
-  }
-}
-
-// Get visited products
-function brazil_home_get_visited_products()
-{
-  if (isset($_COOKIE['visited_products'])) {
-    $visited_products = json_decode(stripslashes($_COOKIE['visited_products']), true);
-    return is_array($visited_products) ? $visited_products : array();
-  }
-  return array();
-}
-
-// Hook to track product visits
-add_action('wp', 'brazil_home_track_product_visit');
-function brazil_home_track_product_visit()
-{
-  if (is_product()) {
-    global $post;
-    if ($post && $post->ID) {
-      brazil_home_track_visited_product($post->ID);
-    }
-  }
 }
 
 // Helper function to get "Todos os Produtos" page URL
@@ -1757,3 +1714,25 @@ function custom_enqueue_checkout_scripts()
   }
 }
 add_action('wp_enqueue_scripts', 'custom_enqueue_checkout_scripts');
+
+// Remove the stock-alert plugin's "Notify Me" button from the single product page.
+add_action('wp', function () {
+  if (!function_exists('is_product') || !is_product()) {
+    return;
+  }
+
+  global $wp_filter;
+  foreach (array('woocommerce_single_product_summary', 'woocommerce_after_add_to_cart_form', 'woocommerce_after_single_product_summary', 'woocommerce_after_variations_form', 'wp_footer') as $hook) {
+    if (empty($wp_filter[$hook])) {
+      continue;
+    }
+    foreach ($wp_filter[$hook]->callbacks as $priority => $callbacks) {
+      foreach ($callbacks as $callback) {
+        $fn = $callback['function'];
+        if (is_array($fn) && is_object($fn[0]) && str_ends_with(get_class($fn[0]), 'Add_Notify_Me_Button')) {
+          remove_action($hook, $fn, $priority);
+        }
+      }
+    }
+  }
+});

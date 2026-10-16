@@ -2202,3 +2202,121 @@ textarea {
   display: block;
   max-width: none !important;
 }
+
+/* Avise-me modal: backdrop and CF7 field styling (contact.css is scoped to .contact-form-section) */
+.avise-me-form-wrapper {
+  background-color: rgba(7, 31, 44, 0.6);
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.avise-me-form-inner {
+  width: 100%;
+  max-width: 480px;
+  box-sizing: border-box;
+}
+
+.avise-me-form-inner h3 {
+  margin: 0;
+  padding-right: 24px;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  color: #1c4067;
+}
+
+.avise-me-form-inner .wpcf7-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.avise-me-form-inner .wpcf7-form p {
+  margin: 0;
+}
+
+.avise-me-form-inner .wpcf7-form-control-wrap {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.avise-me-form-inner .wpcf7-form input[type="text"],
+.avise-me-form-inner .wpcf7-form input[type="email"],
+.avise-me-form-inner .wpcf7-form input[type="tel"],
+.avise-me-form-inner .wpcf7-form textarea {
+  width: 100%;
+  height: 48px;
+  padding: 12px 16px;
+  box-sizing: border-box;
+  border: 1px solid #cde0ea;
+  border-radius: 6px;
+  background-color: #fff;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  color: #071f2c;
+  transition: border-color 0.3s ease;
+}
+
+.avise-me-form-inner .wpcf7-form textarea {
+  height: 120px;
+  resize: none;
+}
+
+.avise-me-form-inner .wpcf7-form input::placeholder,
+.avise-me-form-inner .wpcf7-form textarea::placeholder {
+  color: #52636c;
+}
+
+.avise-me-form-inner .wpcf7-form input:focus,
+.avise-me-form-inner .wpcf7-form textarea:focus {
+  outline: none;
+  border-color: #0264c0;
+}
+
+.avise-me-form-inner .wpcf7-form input[type="submit"] {
+  width: 100%;
+  height: 48px;
+  border: none;
+  border-radius: 4px;
+  background-color: #0264c0;
+  font-family: Manrope, Inter, sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.avise-me-form-inner .wpcf7-form input[type="submit"]:hover:not(:disabled) {
+  background-color: #1c4067;
+}
+
+.avise-me-form-inner .wpcf7-form input[type="submit"]:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.avise-me-form-inner .wpcf7-not-valid-tip {
+  margin-top: 4px;
+  font-family: Inter, sans-serif;
+  font-size: 13px;
+  color: #b3261e;
+}
+
+.avise-me-form-inner .wpcf7-response-output {
+  margin: 0 !important;
+  padding: 12px 16px !important;
+  border-radius: 6px;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+}
+
+.avise-me-form-inner .wpcf7-spinner {
+  display: none;
+}

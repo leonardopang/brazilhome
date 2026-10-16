@@ -919,3 +919,9 @@ body.header-is-fixed {
   height: 2px;
   z-index: 1;
 }
+
+/* Minimum touch target size for the desktop search button */
+.search-button {
+  min-width: 24px;
+  min-height: 24px;
+}

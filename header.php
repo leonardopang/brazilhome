@@ -35,10 +35,8 @@ if (!defined('ABSPATH')) {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <style data-no-optimize="1" data-nowprocket>body.home #custom-banner-section{aspect-ratio:1143/568}.home-banner-spacer{width:100%;aspect-ratio:1143/568}body:has(#custom-banner-section) .home-banner-spacer{display:none}</style>
 
     <?php wp_head(); ?>
 </head>
@@ -47,6 +45,11 @@ if (!defined('ABSPATH')) {
 
     <?php
     get_template_part('template-parts/header');
+
+    // Reserves the height of the JS-injected home banner (#custom-banner-section) to avoid layout shift.
+    if (is_front_page() || is_home()) {
+        echo '<div class="home-banner-spacer" aria-hidden="true"></div>';
+    }
 
     // WhatsApp Floating Button
     if (get_theme_mod('whatsapp_enable', true) && get_theme_mod('whatsapp_number', '')) {

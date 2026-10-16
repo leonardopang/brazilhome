@@ -1673,35 +1673,6 @@ input[type="number"] {
   margin-bottom: 48px;
 }
 
-.detalhes-products-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  max-width: 1224px;
-  margin: 0 auto;
-  justify-items: center;
-}
-
-/* Responsive styles for detalhes products */
-@media (max-width: 1024px) {
-  .detalhes-products-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-  }
-}
-
-@media (max-width: 480px) {
-  .detalhes-products-section {
-    padding: 40px 0;
-  }
-
-  .detalhes-products-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 0 15px;
-  }
-}
-
 /* Reviews Carousel Section - Override existing styles */
 .reviews-summary-section {
   background: #f1f5f9;

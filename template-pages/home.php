@@ -263,7 +263,7 @@ get_header();
                         class="product-btn-buy ajax_add_to_cart add_to_cart_button"
                         data-product_id="<?php echo $product->get_id(); ?>"
                         data-product_sku="<?php echo esc_attr($product->get_sku()); ?>"
-                        aria-label="<?php echo esc_attr($product->add_to_cart_description()); ?>"
+                        aria-label="<?php echo esc_attr('Comprar agora: ' . $product->get_name()); ?>"
                         rel="nofollow">
                         COMPRAR AGORA
                       </button>
@@ -363,7 +363,7 @@ get_header();
     <div class="homepage-container">
       <div class="banner-content">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/brazil-home-truck-delivery-white.png"
-          alt="Banner" class="banner-image">
+          alt="Banner" class="banner-image" width="20" height="20">
         <p class="banner-text"><?php echo get_field('banner_servico_texto'); ?></p>
       </div>
     </div>
@@ -427,7 +427,7 @@ get_header();
                     if (!empty($categories)): ?>
                       <span class="blog-category"><?php echo strtoupper($categories[0]->name); ?></span>
                     <?php endif; ?>
-                    <h3 class="blog-card-title"><?php echo strtoupper(get_the_title()); ?></h3>
+                    <h2 class="blog-card-title"><?php echo strtoupper(get_the_title()); ?></h2>
                   </div>
                   <img class="blog-read-more"
                     src="<?php echo get_template_directory_uri(); ?>/assets/images/brazil-home-arrow-up-right.png"
@@ -450,7 +450,7 @@ get_header();
               <div class="blog-card-content">
                 <div class="blog-card-content-inner">
                   <span class="blog-category">BLOG</span>
-                  <h3 class="blog-card-title">NENHUMA POSTAGEM ENCONTRADA</h3>
+                  <h2 class="blog-card-title">NENHUMA POSTAGEM ENCONTRADA</h2>
                 </div>
                 <img class="blog-read-more"
                   src="<?php echo get_template_directory_uri(); ?>/assets/images/brazil-home-arrow-up-right.png"

@@ -162,32 +162,15 @@ get_header();
       <div class="detalhes-products-grid">
         <?php if (class_exists('WooCommerce')): ?>
           <?php
-          // Get visited products
-          $visited_product_ids = brazil_home_get_visited_products();
-
-          if (!empty($visited_product_ids)) {
-            // Show visited products
-            $carousel_args = array(
-              'post_type' => 'product',
-              'posts_per_page' => 10,
-              'post_status' => 'publish',
-              'post__in' => $visited_product_ids,
-              'orderby' => 'post__in', // Maintain the order from visited products
-              'meta_query' => WC()->query->get_meta_query(),
-              'tax_query' => WC()->query->get_tax_query()
-            );
-          } else {
-            // Fallback to recent products if no visited products
-            $carousel_args = array(
-              'post_type' => 'product',
-              'posts_per_page' => 10,
-              'post_status' => 'publish',
-              'orderby' => 'date',
-              'order' => 'DESC',
-              'meta_query' => WC()->query->get_meta_query(),
-              'tax_query' => WC()->query->get_tax_query()
-            );
-          }
+          $carousel_args = array(
+            'post_type' => 'product',
+            'posts_per_page' => 10,
+            'post_status' => 'publish',
+            'orderby' => 'date',
+            'order' => 'DESC',
+            'meta_query' => WC()->query->get_meta_query(),
+            'tax_query' => WC()->query->get_tax_query()
+          );
 
           $carousel_products = new WP_Query($carousel_args);
 

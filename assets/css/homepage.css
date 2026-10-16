@@ -942,7 +942,7 @@ body > main > section.hero-section > div > div {
   line-height: 140%;
   letter-spacing: 2%;
   text-transform: uppercase;
-  color: #707d8c;
+  color: #5b6775;
   margin-top: 39px;
 }
 
@@ -989,7 +989,7 @@ body > main > section.hero-section > div > div {
 }
 
 .newsletter-button {
-  background-color: #3b82f6;
+  background-color: #2563eb;
   color: white;
   border: none;
   cursor: pointer;

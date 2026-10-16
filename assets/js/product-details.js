@@ -1,6 +1,20 @@
 // Product Details Page JavaScript
 
+function trackVisitedProduct() {
+  if (typeof brazil_product_tracker === "undefined" || !brazil_product_tracker.product_id) return;
+  const id = Number(brazil_product_tracker.product_id);
+  let list = [];
+  try {
+    const match = document.cookie.match(/(?:^|; )visited_products=([^;]*)/);
+    if (match) list = JSON.parse(decodeURIComponent(match[1]));
+  } catch (e) {}
+  if (!Array.isArray(list)) list = [];
+  list = [id].concat(list.filter((x) => x !== id)).slice(0, 10);
+  document.cookie = "visited_products=" + encodeURIComponent(JSON.stringify(list)) + "; path=/; max-age=" + 30 * 24 * 60 * 60 + "; SameSite=Lax";
+}
+
 document.addEventListener("DOMContentLoaded", function () {
+  trackVisitedProduct();
   // Quantity controls run first and each init is isolated so a failure in one
   // (e.g. the Slick gallery) can't abort the rest of the callback and leave
   // the +/- buttons unwired.

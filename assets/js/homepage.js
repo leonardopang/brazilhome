@@ -454,6 +454,10 @@ function initBrandsCarousel() {
     }
 
     const brandsGrid = jQuery('.brands-grid');
+
+    brandsGrid.on('init reInit afterChange setPosition', function () {
+        brandsGrid.find('.slick-slide[aria-hidden="true"]').attr('tabindex', -1);
+    });
     let isCarouselActive = false;
 
     function checkWindowSize() {
