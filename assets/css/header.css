@@ -855,6 +855,7 @@ body.header-is-fixed {
 }
 
 .carousel-text {
+  will-change: transform, opacity;
   position: absolute;
   width: 100%;
   color: #fff;

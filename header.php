@@ -16,8 +16,7 @@ if (!defined('ABSPATH')) {
 <html <?php language_attributes(); ?>>
 
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MPBDMY6JB0"></script>
+    <!-- Google tag (gtag.js): config is queued right away, the library loads on first interaction or after page load to keep it off the critical path -->
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -27,6 +26,29 @@ if (!defined('ABSPATH')) {
         gtag('js', new Date());
 
         gtag('config', 'G-MPBDMY6JB0');
+
+        (function() {
+            var loaded = false;
+
+            function loadGtag() {
+                if (loaded) return;
+                loaded = true;
+                if (document.querySelector('script[src*="gtag/js?id=G-MPBDMY6JB0"]')) return;
+                var s = document.createElement('script');
+                s.async = true;
+                s.src = 'https://www.googletagmanager.com/gtag/js?id=G-MPBDMY6JB0';
+                document.head.appendChild(s);
+            }
+            ['scroll', 'click', 'touchstart', 'keydown', 'mousemove'].forEach(function(evt) {
+                window.addEventListener(evt, loadGtag, {
+                    once: true,
+                    passive: true
+                });
+            });
+            window.addEventListener('load', function() {
+                setTimeout(loadGtag, 3500);
+            });
+        })();
     </script>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="author" content="Criação de Site por UpSites">

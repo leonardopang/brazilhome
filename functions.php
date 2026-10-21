@@ -1095,6 +1095,29 @@ function brazil_home_get_installment_parcels()
   return apply_filters('brazil_home_installment_parcels', 10);
 }
 
+// Returns ' width="X" height="Y"' for an uploaded image URL so the browser can reserve its space (avoids CLS).
+function brazil_home_image_size_attrs($url)
+{
+  if (empty($url) || !is_string($url)) {
+    return '';
+  }
+
+  $key = 'bh_imgsize_' . md5($url);
+  $size = get_transient($key);
+
+  if ($size === false) {
+    $size = '';
+    $id = attachment_url_to_postid($url);
+    $meta = $id ? wp_get_attachment_metadata($id) : null;
+    if (!empty($meta['width']) && !empty($meta['height'])) {
+      $size = ' width="' . (int) $meta['width'] . '" height="' . (int) $meta['height'] . '"';
+    }
+    set_transient($key, $size, DAY_IN_SECONDS);
+  }
+
+  return $size;
+}
+
 function brazil_home_get_installment_text($product_price)
 {
   $parcels = brazil_home_get_installment_parcels();
@@ -1736,3 +1759,59 @@ add_action('wp', function () {
     }
   }
 });
+
+// ACF Local JSON: field groups are stored in /acf-json and kept in sync with the admin panel.
+add_filter('acf/settings/save_json', function () {
+  return get_template_directory() . '/acf-json';
+});
+
+add_filter('acf/settings/load_json', function ($paths) {
+  unset($paths[0]);
+  $paths[] = get_template_directory() . '/acf-json';
+  return $paths;
+});
+
+add_action('admin_init', 'brazil_home_acf_sync_json');
+function brazil_home_acf_sync_json()
+{
+  if (wp_doing_ajax() || !function_exists('acf_get_field_groups') || !function_exists('acf_import_field_group')) {
+    return;
+  }
+
+  $dir = get_template_directory() . '/acf-json';
+  if (!is_dir($dir)) {
+    wp_mkdir_p($dir);
+  }
+
+  static $running = false;
+  if ($running) {
+    return;
+  }
+  $running = true;
+
+  foreach (acf_get_field_groups() as $group) {
+    if (!empty($group['private'])) {
+      continue;
+    }
+
+    $is_json = isset($group['local']) && $group['local'] === 'json';
+
+    // Panel -> JSON: write groups that exist only in the database.
+    if (!$is_json && !empty($group['ID']) && !file_exists($dir . '/' . $group['key'] . '.json') && function_exists('acf_write_json_field_group')) {
+      $group['fields'] = acf_get_fields($group['key']);
+      acf_write_json_field_group($group);
+      continue;
+    }
+
+    // JSON -> panel: import groups that are new or newer than the database copy.
+    if ($is_json) {
+      $modified = isset($group['modified']) ? (int) $group['modified'] : 0;
+      if (empty($group['ID']) || ($modified && $modified > (int) get_post_modified_time('U', true, $group['ID'], true))) {
+        $group['fields'] = acf_get_fields($group['key']);
+        acf_import_field_group($group);
+      }
+    }
+  }
+
+  $running = false;
+}

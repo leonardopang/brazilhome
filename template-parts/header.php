@@ -77,7 +77,7 @@
 
                 <button class="custom-search-button-mobile" id="custom-search-button-mobile">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/brazil-home-busca.svg"
-                        alt="Buscar">
+                        alt="Buscar" width="40" height="40">
                 </button>
 
                 <div class="logo-section">

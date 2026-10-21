@@ -196,7 +196,8 @@ get_header();
           <?php while (have_rows('lista_marcas')):
             the_row(); ?>
             <div class="brand-item">
-              <img src="<?php echo get_sub_field('logo'); ?>" alt="" class="brand-logo">
+              <?php $brand_logo = get_sub_field('logo'); ?>
+              <img src="<?php echo esc_url($brand_logo); ?>" alt="" class="brand-logo"<?php echo brazil_home_image_size_attrs($brand_logo); ?> loading="lazy">
             </div>
           <?php endwhile; ?>
         <?php endif; ?>
@@ -504,7 +505,7 @@ get_header();
         <form class="newsletter-form">
           <div class="newsletter-input-group">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/brazil-home-search-01.png"
-              alt="Email" class="newsletter-input-icon">
+              alt="Email" class="newsletter-input-icon" width="22" height="22">
             <input type="email" placeholder="E-mail" class="newsletter-input" required>
             <button type="submit" class="newsletter-button">CADASTRAR</button>
           </div>
