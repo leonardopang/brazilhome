@@ -112,6 +112,7 @@ body.header-is-fixed {
 .logo-section .main-logo {
   width: 167px;
   height: 88px;
+  object-fit: contain;
 }
 
 @media (max-width: 450px) {

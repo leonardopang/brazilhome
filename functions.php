@@ -1095,6 +1095,33 @@ function brazil_home_get_installment_parcels()
   return apply_filters('brazil_home_installment_parcels', 10);
 }
 
+// Header logo: uses the logo set in Appearance > Customize > Site Identity, falling back to the bundled image.
+function brazil_home_header_logo()
+{
+  $alt = get_bloginfo('name') ?: 'Brazil Home Living';
+  $logo_id = (int) get_theme_mod('custom_logo');
+  $image = $logo_id ? wp_get_attachment_image_src($logo_id, 'full') : false;
+
+  if ($image) {
+    $src = $image[0];
+    $width = (int) $image[1];
+    $height = (int) $image[2];
+    $alt = get_post_meta($logo_id, '_wp_attachment_image_alt', true) ?: $alt;
+  } else {
+    $src = get_template_directory_uri() . '/assets/images/brazil-home-logo.png';
+    $width = 167;
+    $height = 88;
+  }
+
+  return sprintf(
+    '<img src="%s" alt="%s" class="main-logo" width="%d" height="%d">',
+    esc_url($src),
+    esc_attr($alt),
+    $width,
+    $height
+  );
+}
+
 // Returns ' width="X" height="Y"' for an uploaded image URL so the browser can reserve its space (avoids CLS).
 function brazil_home_image_size_attrs($url)
 {

@@ -82,8 +82,7 @@
 
                 <div class="logo-section">
                     <a href="<?php echo home_url(); ?>">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/brazil-home-logo.png"
-                            alt="Brazil Home Living" class="main-logo" width="167" height="88">
+                        <?php echo brazil_home_header_logo(); ?>
                     </a>
                 </div>
 
@@ -153,8 +152,7 @@
         <div class="header-nav-container">
             <div class="logo-section logo-scetion-mobile">
                 <a href="<?php echo home_url(); ?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/brazil-home-logo.png"
-                        alt="Brazil Home Living" class="main-logo" width="167" height="88">
+                    <?php echo brazil_home_header_logo(); ?>
                 </a>
             </div>
             <?php
