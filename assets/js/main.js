@@ -652,6 +652,10 @@ function syncCepToOtherInputs(cep) {
   });
 }
 
+// Last successful result, so checkout refreshes (e.g. changing the payment
+// method) restore it instead of hitting the shipping API again.
+let lastShippingResult = { cep: "", html: "" };
+
 // Core calculation runner — shared by cart and checkout
 async function runCepCalculation(input, button, resultsContainer) {
   console.log(
@@ -676,7 +680,9 @@ async function runCepCalculation(input, button, resultsContainer) {
 
   try {
     const options = await fetchShippingRates(cep);
-    setShippingResult(resultsContainer, buildShippingResultHTML(options));
+    const resultHTML = buildShippingResultHTML(options);
+    setShippingResult(resultsContainer, resultHTML);
+    lastShippingResult = { cep: cepRaw, html: resultHTML };
     saveCepCookie(cep); // persist after successful calculation
     syncCepToOtherInputs(cep); // keep cart ↔ checkout in sync
   } catch (error) {
@@ -730,7 +736,11 @@ function initCepCalculator(inputId, buttonId, resultsId, autoCalculate) {
   if (prefill.length === 8) {
     input.value = formatCep(prefill);
     if (autoCalculate) {
-      setTimeout(() => runCepCalculation(input, button, results), 500);
+      if (lastShippingResult.cep === prefill) {
+        setShippingResult(results, lastShippingResult.html);
+      } else {
+        setTimeout(() => runCepCalculation(input, button, results), 500);
+      }
     }
   }
 }
